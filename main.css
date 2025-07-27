@@ -10,27 +10,35 @@
 }
 /* حجم الشريط */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 
 /* خلفية المسار */
 ::-webkit-scrollbar-track {
-  background: #111225; /* لون المسار */
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* شادو داخلي */
+  background: #111225;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 
-/* اللون المتحرك (الزر نفسه) */
+/* الزر المتحرك */
 ::-webkit-scrollbar-thumb {
-  background: #ff7a00; /* اللون الأساسي */
+  background: #ff7a00;
   border-radius: 10px;
-  box-shadow: 0 0 10px 5px rgba(250, 134, 25, 0.6); /* شادو خارجي */
+  box-shadow: 0 0 10px 5px rgba(250, 134, 25, 0.6);
+    cursor: grabbing;
 }
 
-/* لما المؤشر ييجي عليه */
+/* عند المرور بالماوس */
 ::-webkit-scrollbar-thumb:hover {
   background: #ff9500;
+  cursor: grab;
 }
+
+/* عند الضغط */
+::-webkit-scrollbar-thumb:focus {
+  background: #ff6a00;
+}
+
 
 img{
   user-select: none;
@@ -508,16 +516,16 @@ header.scrolled {
     overflow: hidden;
 }
 
-/* CSS */
+
 .background-svg {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 200%;       /* عرض مضاعف للتمرير */
+  width: 200%;      
   height: 300px;
   z-index: 0;
   pointer-events: none;
-  transform: translateX(-25%); /* بداية الإزاحة */
+  transform: translateX(-25%); 
   animation: moveBg 12s linear infinite;
 }
 
@@ -618,7 +626,7 @@ header.scrolled {
   filter: drop-shadow(0 0 8px var(--color));
 }
 
-/* الاسم */
+
 .skill span {
   display: block;
   font-weight: bold;
@@ -628,7 +636,7 @@ header.scrolled {
   transition: 0.3s ease;
 }
 
-/* النسبة */
+
 .skill .percent {
   margin-top: 5px;
   font-size: 14px;
@@ -638,7 +646,7 @@ header.scrolled {
   transition: 0.3s ease;
 }
 
-/* التبويبات */
+
 .skill-tabs {
   margin-bottom: 30px;
   position: relative;
@@ -665,6 +673,7 @@ header.scrolled {
   color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(255, 127, 0, 0.4);
+   border: 2px solid #fff;
 }
 
 /* projects */
@@ -1876,17 +1885,19 @@ header {
 }
 
 /*home*/
-.home{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    background:#000011;
-    flex-direction: column;
-    gap: 50px;
-    margin-top: 70px;
+.home {
+  width: 100%;
+  height: 100vh; /* تأكد إنه 100% من ارتفاع الشاشة */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;  /* قلل البادينج الرأسي */
+  position: relative;
+  background: url('imegas/ChatGPT Image Jun 20, 2025, 09_27_42 PM.png')no-repeat   center center;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+  flex-direction: column;
 }
 .left-side-home{
     display: flex;
@@ -1963,7 +1974,7 @@ header {
   height: 100%;
   width: 20px;
 }
-.right-side-home img{
+.right-side-home video{
     width: 300px;
     height: auto;
     border-radius: 50%;
@@ -2294,26 +2305,30 @@ padding: 50px;
 }
 
 /*home*/
-.home{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    background:#000011;
-    flex-direction: column;
-    gap: 50px;
-    margin-top: 70px;
+.home {
+  width: 100%;
+  height: 100%; /* تأكد إنه 100% من ارتفاع الشاشة */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:  50px;  /* قلل البادينج الرأسي */
+  position: relative;
+  background: url('imegas/ChatGPT Image Jun 20, 2025, 09_27_42 PM.png')no-repeat   center center;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+  flex-direction: column;
+  gap:70px;
 }
 .left-side-home{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     text-align: left;
     gap: 25px;
     width: 100%;
+    margin-top: 100px;
 }
 .left-side-home h2{
     font-size: 25px;
@@ -2371,7 +2386,7 @@ padding: 50px;
   background-color:#ff7a00;
   overflow: hidden;
   border-radius: 40px;
-  font-size: 16px;
+  font-size: 12px;
 }
 .btn-cv  .svg {
   width: 20px;
@@ -2381,8 +2396,8 @@ padding: 50px;
   height: 100%;
   width: 20px;
 }
-.right-side-home img{
-    width: 300px;
+.right-side-home video{
+    width: 400px;
     height: auto;
     border-radius: 50%;
     border: 5px solid #FF8A00;
@@ -2399,7 +2414,7 @@ padding: 50px;
   align-items: center;
   justify-content: center;
   background: #000011;
-  gap: 100px;
+  gap: 50px;
   height: 100%;
 }
 .left-about {
@@ -2410,44 +2425,36 @@ padding: 50px;
   justify-content: center;
   text-align: center;
   gap: 20px;
+  padding:  20px;
 }
 .left-about p {
   font-size: 17px;
   font-weight: 500;
   color: #fff;
 }
+
+.about-title {
+  font-size: 40px;
+  color: #ff6f00;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #ff6f00, 0 0 25px #ff6f00;
+  animation: glow 2s infinite alternate;
+}
+
 .right-about {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  grid-row: 200px;
+  display: flex;
+  height: auto;
+  box-shadow: 0 0 20px 10px rgba(248, 137, 11, 0.7);
+  border-radius: 50px;
 }
-.box-about {
-  width: 170px;
-  height: 170px;
-  padding: 30px 10px;
-  gap: 10px;
-  box-shadow: 0 0 20px 5px hsla(32, 94%, 48%, 0.842);
-}
-.box-about i {
-  font-size: 25px;
-  color: #FF8A00;
-}
-.box-about h2 {
-  font-size: 15px;
-  font-weight: 500;
-}
+.right-about video{
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
 
-.box-about p {
-  font-size: 20px;
-  font-weight: 600;
 }
-.box-about:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px 10px hsla(32, 94%, 48%, 0.9);
-}
-
 
 /*skills*/
 .skills {
@@ -2460,6 +2467,30 @@ padding: 50px;
   flex-direction: column;
   justify-content: center;
 }
+.skill-tabs {
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  display: grid;
+ grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-tabs .tab {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+
 .skills h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
@@ -2549,6 +2580,7 @@ padding: 50px;
   justify-content: center;
   display: flex;
   flex-direction: column;
+  gap: 50px;
 }
 .services {
   padding: 50px ;
@@ -2559,29 +2591,7 @@ padding: 50px;
 .qastion{
 padding: 50px;
 }
-.contact {
-  padding: 50px ;
-  background-color: #111225;
-  color: #eee;
-  width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  border-radius: 20px;
-  border: 1px solid #e36700;
-  box-shadow: 0 10px 15px hsl(29, 100%, 50%);
-}
-.contact h2 {
-  font-size: 2.2rem;
-}
-.contact form {
-  gap: 10px;
-}
-.contact input, .contact textarea {
-  padding: 12px 17px;
-  border-radius: 10px;
-  border: none;
-  font-size: 1rem;
-}
+
   .faq {
     width:100%;
     background: #111225;
@@ -2593,19 +2603,27 @@ padding: 50px;
     overflow-y: auto;
     scrollbar-width: none;
   }
-  .cta {
-  padding: 50px;
-  background-color: #ff7a00;
-  color: #0f1424;
-  text-align: center;
-  border-radius: 15px;
-  margin: 50px ;
-  box-shadow: 0 8px 20px rgba(255, 122, 0, 0.4);
+ .contact-section {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000011;
+  color: #eee;
+  padding: 2rem;
 }
-.cta h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  font-weight: 800;
+
+/* From Uiverse.io by Lakshay-art */ 
+.section-banner {
+  top:300px;
+  bottom: 100px;
+  left: 100px;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  transition: left 0.3s linear;
 }
 .footer-container {
   display: flex;

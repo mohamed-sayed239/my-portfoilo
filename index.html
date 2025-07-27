@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <title>Mohamed Sayed</title>
-</head>
-<body>
-<header>
-    <nav class="navigation ">
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
         <div class="logo">
-            <img src="imegas/logo.png" alt="Logo">
+          <img src="imegas/logo.png" alt="Logo" />
         </div>
         <div class="main-head">
-            <div class="remove-container">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <a href="#home" data-translate="home">Home</a>
-            <a href="#about" data-translate="about">About Me</a>
-            <a href="#skills" data-translate="skills">Skills</a>
-            <a href="#projects" data-translate="projects">Projects</a>
-            <a href="#testimonials" data-translate="testimonials">Customer</a>
-            <a href="#services" data-translate="services">Services</a>
-            <a href="#contact" data-translate="contact">Contact</a>
+          <div class="remove-container">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <a href="#home" data-translate="home">Home</a>
+          <a href="#about" data-translate="about">About Me</a>
+          <a href="#skills" data-translate="skills">Skills</a>
+          <a href="#projects" data-translate="projects">Projects</a>
+          <a href="#testimonials" data-translate="testimonials">Customer</a>
+          <a href="#services" data-translate="services">Services</a>
+          <a href="#contact" data-translate="contact">Contact</a>
         </div>
         <div class="bar-lg">
-            <div class="btn-lag">
-                <div class="dropdown">
-                    <button class="dropdown-btn" data-translate="current_lang">English</button>
-                    <div class="dropdown-content">
-                        <a href="#" onclick="return changeLanguage('en')" data-translate="english">English</a>
-                        <a href="#" onclick="return changeLanguage('ar')" data-translate="arabic">العربية</a>
-                    </div>
-                </div>
+          <div class="btn-lag">
+            <div class="dropdown">
+              <button class="dropdown-btn" data-translate="current_lang">
+                English
+              </button>
+              <div class="dropdown-content">
+                <a
+                  href="#"
+                  onclick="return changeLanguage('en')"
+                  data-translate="english"
+                  >English</a
+                >
+                <a
+                  href="#"
+                  onclick="return changeLanguage('ar')"
+                  data-translate="arabic"
+                  >العربية</a
+                >
+              </div>
             </div>
-            <a class="menu-toggle"><i class="fa-solid fa-bars"></i></a>
+          </div>
+          <a class="menu-toggle"><i class="fa-solid fa-bars"></i></a>
         </div>
-    </nav>
-</header>
-<section class="home" id="home">
-    <div class="overlay"></div>
-    <div class="floating-icons">
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="overlay"></div>
+      <div class="floating-icons">
         <span class="icon icon-orange">&lt;/&gt;</span>
         <span class="icon icon-blue">{ }</span>
         <span class="icon icon-orange">function()</span>
@@ -55,519 +74,864 @@
         <span class="icon icon-orange">if ()</span>
         <span class="icon icon-blue">[ ]</span>
         <span class="icon icon-glow">==></span>
-    </div>
-    <div class="left-side-home">
+      </div>
+      <div class="left-side-home">
         <h2>
-            <span data-translate="home_title" style="   
-    font-size: 30px;
-    font-weight: 300;
-    color: #ffffff;
-    line-height:2;
-    letter-spacing: 3px;
-    text-transform: uppercase;">Hi I'M, Mohamed sayed!</span>
-            <br>
-            <span data-translate="home_subtitle" style="    
-    font-size: 70px;
-    font-weight: 500;
-    color: #FF8A00;
-    line-height:1;
-    letter-spacing: 3px;
-    text-transform: uppercase;">web Developer</span>
+          <span
+            data-translate="home_title"
+            style="
+              font-size: 30px;
+              font-weight: 300;
+              color: #ffffff;
+              line-height: 2;
+              letter-spacing: 3px;
+              text-transform: uppercase;
+            "
+            >Hi I'M, Mohamed sayed!</span
+          >
+          <br />
+          <span
+            data-translate="home_subtitle"
+            style="
+              font-size: 70px;
+              font-weight: 500;
+              color: #ff8a00;
+              line-height: 1;
+              letter-spacing: 3px;
+              text-transform: uppercase;
+            "
+            >web Developer</span
+          >
         </h2>
         <p data-translate="home_description">
-            Skilled in building responsive and interactive websites using HTML, CSS, and JavaScript.  
-            Experienced with version control using Git and GitHub.  
-            Passionate about crafting clean user interfaces and enhancing user experience.
+          Skilled in building responsive and interactive websites using HTML,
+          CSS, and JavaScript. Experienced with version control using Git and
+          GitHub. Passionate about crafting clean user interfaces and enhancing
+          user experience.
         </p>
         <div class="btns-home">
-            <a href="https://drive.usercontent.google.com/u/0/uc?id=15VTI8TtMcvx-VTRtCWDdi9L-cairotJc&export=download">
-                <button class="btn-cv" type="button">
-                    <span class="btn-cv__text" data-translate="download_btn">Download</span>
-                    <span class="btn-cv__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
-                </button>
-            </a>
-            <a href="#projects">
-                <button class="btn-projects">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
-                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                    </svg>
-                    <span class="text" data-translate="view_projects_btn">View My Project</span>
-                    <span class="circle"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
-                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                    </svg>
-                </button>
-            </a>
+          <a
+            href="https://drive.usercontent.google.com/u/0/uc?id=15VTI8TtMcvx-VTRtCWDdi9L-cairotJc&export=download"
+          >
+            <button class="btn-cv" type="button">
+              <span class="btn-cv__text" data-translate="download_btn"
+                >Download</span
+              >
+              <span class="btn-cv__icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 35 35"
+                  id="bdd05811-e15d-428c-bb53-8661459f9307"
+                  data-name="Layer 2"
+                  class="svg"
+                >
+                  <path
+                    d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"
+                  ></path>
+                  <path
+                    d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"
+                  ></path>
+                  <path
+                    d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"
+                  ></path></svg
+              ></span>
+            </button>
+          </a>
+          <a href="#projects">
+            <button class="btn-projects">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text" data-translate="view_projects_btn"
+                >View My Project</span
+              >
+              <span class="circle"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-1"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
+          </a>
         </div>
-    </div>
-    <div class="right-side-home">
+      </div>
+      <div class="right-side-home">
         <video autoplay muted loop playsinline class="my-video">
-            <source src="imegas/home.mp4" type="video/mp4" />
-            <span data-translate="video_not_supported">Your browser does not support the video tag.</span>
+          <source src="imegas/home.mp4" type="video/mp4" />
+          <span data-translate="video_not_supported"
+            >Your browser does not support the video tag.</span
+          >
         </video>
-    </div>
-</section>
-<section class="about" id="about" style="scroll-margin-top: 100px;">
-    <div class="left-about">
+      </div>
+    </section>
+    <section class="about" id="about" style="scroll-margin-top: 100px">
+      <div class="left-about">
         <h2 class="about-title" data-translate="about_title">About Me</h2>
 
         <div class="about-text">
-            <p class="about-line" style="--delay: 0s;" data-translate="about_text1">
-                Hello! I'm <strong>Mohamed</strong>, a <strong>Front-End Developer</strong> with a passion for clean code, modern design, and building interactive user interfaces.
-            </p>
-            <p class="about-line" style="--delay: 2s;" data-translate="about_text2">
-                I specialize in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, and I'm proficient with frameworks like <strong>React</strong> and <strong>Tailwind CSS</strong>.
-            </p>
-            <p class="about-line" style="--delay: 4s;" data-translate="about_text3">
-                My toolkit includes <strong>Git & GitHub</strong> for version control, and I focus heavily on <strong>Responsive Design</strong>.
-            </p>
-            <p class="about-line" style="--delay: 6s;" data-translate="about_text4">
-                I'm also keen on <strong>UI/UX Design</strong>, and with my <strong>English (B2)</strong> level, I collaborate smoothly with global teams.
-            </p>
-            <p class="about-line" style="--delay: 8s;" data-translate="about_text5">
-                Since starting in <strong>2024</strong>, I've developed e-commerce platforms, dashboards, and business websites — and I'm always ready for the next challenge.
-            </p>
+          <p
+            class="about-line"
+            style="--delay: 0s"
+            data-translate="about_text1"
+          >
+            Hello! I'm <strong>Mohamed</strong>, a
+            <strong>Front-End Developer</strong> with a passion for clean code,
+            modern design, and building interactive user interfaces.
+          </p>
+          <p
+            class="about-line"
+            style="--delay: 2s"
+            data-translate="about_text2"
+          >
+            I specialize in <strong>HTML</strong>, <strong>CSS</strong>, and
+            <strong>JavaScript</strong>, and I'm proficient with frameworks like
+            <strong>React</strong> and <strong>Tailwind CSS</strong>.
+          </p>
+          <p
+            class="about-line"
+            style="--delay: 4s"
+            data-translate="about_text3"
+          >
+            My toolkit includes <strong>Git & GitHub</strong> for version
+            control, and I focus heavily on <strong>Responsive Design</strong>.
+          </p>
+          <p
+            class="about-line"
+            style="--delay: 6s"
+            data-translate="about_text4"
+          >
+            I'm also keen on <strong>UI/UX Design</strong>, and with my
+            <strong>English (B2)</strong> level, I collaborate smoothly with
+            global teams.
+          </p>
+          <p
+            class="about-line"
+            style="--delay: 8s"
+            data-translate="about_text5"
+          >
+            Since starting in <strong>2024</strong>, I've developed e-commerce
+            platforms, dashboards, and business websites — and I'm always ready
+            for the next challenge.
+          </p>
         </div>
-    </div>
+      </div>
 
-    <div class="right-about">
+      <div class="right-about">
         <video autoplay muted loop playsinline class="my-video">
-            <source src="imegas/about.mp4" type="video/mp4" />
-            <span data-translate="video_not_supported">Your browser does not support the video tag.</span>
+          <source src="imegas/about.mp4" type="video/mp4" />
+          <span data-translate="video_not_supported"
+            >Your browser does not support the video tag.</span
+          >
         </video>
-    </div>
-</section>
-<section class="skills" id="skills" style="scroll-margin-top: 700px;">
-    <svg class="background-svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-        <path class="wave wave-back" fill="#ff7f00" fill-opacity="0.06"
-              d="M0,160 C360,200 1080,120 1440,160 L1440,320 L0,320 Z"></path>
-        <path class="wave wave-front" fill="#ff7f00" fill-opacity="0.12"
-              d="M0,200 C240,140 720,260 960,200 L1440,320 L0,320 Z"></path>
-    </svg>
+      </div>
+    </section>
+    <section class="skills" id="skills" style="scroll-margin-top: 700px">
+      <svg
+        class="background-svg"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+      >
+        <path
+          class="wave wave-back"
+          fill="#ff7f00"
+          fill-opacity="0.06"
+          d="M0,160 C360,200 1080,120 1440,160 L1440,320 L0,320 Z"
+        ></path>
+        <path
+          class="wave wave-front"
+          fill="#ff7f00"
+          fill-opacity="0.12"
+          d="M0,200 C240,140 720,260 960,200 L1440,320 L0,320 Z"
+        ></path>
+      </svg>
 
-    <h2 data-translate="skills_title">My Skills</h2>
+      <h2 data-translate="skills_title">My Skills</h2>
 
-    <!-- Tabs -->
-    <div class="skill-tabs">
-        <button class="tab active" data-filter="all" data-translate="all_skills">All</button>
-        <button class="tab" data-filter="frontend" data-translate="frontend">Frontend</button>
-        <button class="tab" data-filter="tools" data-translate="tools">Tools</button>
-        <button class="tab" data-filter="design" data-translate="design">Design</button>
-        <button class="tab" data-filter="language" data-translate="language">Languages</button>
-    </div>
+      <!-- Tabs -->
+      <div class="skill-tabs">
+        <button
+          class="tab active"
+          data-filter="all"
+          data-translate="all_skills"
+        >
+          All
+        </button>
+        <button class="tab" data-filter="frontend" data-translate="frontend">
+          Frontend
+        </button>
+        <button class="tab" data-filter="tools" data-translate="tools">
+          Tools
+        </button>
+        <button class="tab" data-filter="design" data-translate="design">
+          Design
+        </button>
+        <button class="tab" data-filter="language" data-translate="language">
+          Languages
+        </button>
+      </div>
 
-    <div class="skills-container">
+      <div class="skills-container">
         <!-- HTML -->
-        <div class="skill frontend" style="--color: #e44d26; --percent: 95%;">
-            <div class="icon-wrapper">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML">
-            </div>
-            <span data-translate="html_skill">HTML</span>
-            <div class="percent">95%</div>
+        <div class="skill frontend" style="--color: #e44d26; --percent: 95%">
+          <div class="icon-wrapper">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+              alt="HTML"
+            />
+          </div>
+          <span data-translate="html_skill">HTML</span>
+          <div class="percent">95%</div>
         </div>
 
         <!-- CSS -->
-        <div class="skill frontend" style="--color: #264de4; --percent: 90%;">
-            <div class="icon-wrapper">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS">
-            </div>
-            <span data-translate="css_skill">CSS</span>
-            <div class="percent">90%</div>
+        <div class="skill frontend" style="--color: #264de4; --percent: 90%">
+          <div class="icon-wrapper">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+              alt="CSS"
+            />
+          </div>
+          <span data-translate="css_skill">CSS</span>
+          <div class="percent">90%</div>
         </div>
 
         <!-- JavaScript -->
-        <div class="skill frontend" style="--color: #f0db4f; --percent: 80%;">
-            <div class="icon-wrapper">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JS">
-            </div>
-            <span data-translate="js_skill">JavaScript</span>
-            <div class="percent">80%</div>
+        <div class="skill frontend" style="--color: #f0db4f; --percent: 80%">
+          <div class="icon-wrapper">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+              alt="JS"
+            />
+          </div>
+          <span data-translate="js_skill">JavaScript</span>
+          <div class="percent">80%</div>
         </div>
 
         <!-- React -->
-        <div class="skill frontend" style="--color: #61dafb; --percent: 70%;">
-            <div class="icon-wrapper">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React">
-            </div>
-            <span data-translate="react_skill">React</span>
-            <div class="percent">70%</div>
+        <div class="skill frontend" style="--color: #61dafb; --percent: 70%">
+          <div class="icon-wrapper">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+              alt="React"
+            />
+          </div>
+          <span data-translate="react_skill">React</span>
+          <div class="percent">70%</div>
         </div>
 
         <!-- Git & GitHub -->
-        <div class="skill tools" style="--color: #f1502f; --percent: 85%;">
-            <div class="icon-wrapper">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git">
-            </div>
-            <span data-translate="git_skill">Git & GitHub</span>
-            <div class="percent">85%</div>
+        <div class="skill tools" style="--color: #f1502f; --percent: 85%">
+          <div class="icon-wrapper">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+              alt="Git"
+            />
+          </div>
+          <span data-translate="git_skill">Git & GitHub</span>
+          <div class="percent">85%</div>
         </div>
 
         <!-- Tailwind CSS -->
-        <div class="skill frontend" style="--color: #38bdf8; --percent: 90%;">
-            <div class="icon-wrapper">
-                <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind">
-            </div>
-            <span data-translate="tailwind_skill">Tailwind CSS</span>
-            <div class="percent">90%</div>
+        <div class="skill frontend" style="--color: #38bdf8; --percent: 90%">
+          <div class="icon-wrapper">
+            <img
+              src="https://www.svgrepo.com/show/374118/tailwind.svg"
+              alt="Tailwind"
+            />
+          </div>
+          <span data-translate="tailwind_skill">Tailwind CSS</span>
+          <div class="percent">90%</div>
         </div>
 
         <!-- Responsive Design -->
-        <div class="skill frontend" style="--color: #00c896; --percent: 100%;">
-            <div class="icon-wrapper">
-                <img src="https://cdn-icons-png.flaticon.com/512/1149/1149168.png" alt="Responsive">
-            </div>
-            <span data-translate="responsive_skill">Responsive Design</span>
-            <div class="percent">100%</div>
+        <div class="skill frontend" style="--color: #00c896; --percent: 100%">
+          <div class="icon-wrapper">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1149/1149168.png"
+              alt="Responsive"
+            />
+          </div>
+          <span data-translate="responsive_skill">Responsive Design</span>
+          <div class="percent">100%</div>
         </div>
 
         <!-- UI/UX Design -->
-        <div class="skill design" style="--color: #a259ff; --percent: 65%;">
-            <div class="icon-wrapper">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="UI/UX">
-            </div>
-            <span data-translate="uiux_skill">UI / UX</span>
-            <div class="percent">65%</div>
+        <div class="skill design" style="--color: #a259ff; --percent: 65%">
+          <div class="icon-wrapper">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg"
+              alt="UI/UX"
+            />
+          </div>
+          <span data-translate="uiux_skill">UI / UX</span>
+          <div class="percent">65%</div>
         </div>
 
         <!-- English -->
-        <div class="skill language" style="--color: #007acc; --percent: 70%;">
-            <div class="progress-border"></div>
-            <div class="icon-wrapper">
-                <img src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/english-speaking-icon.png" alt="EN" />
-            </div>
-            <span data-translate="english_skill">English (B2)</span>
-            <div class="percent">70%</div>
+        <div class="skill language" style="--color: #007acc; --percent: 70%">
+          <div class="progress-border"></div>
+          <div class="icon-wrapper">
+            <img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/english-speaking-icon.png"
+              alt="EN"
+            />
+          </div>
+          <span data-translate="english_skill">English (B2)</span>
+          <div class="percent">70%</div>
         </div>
 
         <!-- Adobe Photoshop -->
-        <div class="skill design" style="--color: #31a8ff; --percent: 80%;">
-            <div class="icon-wrapper">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" alt="Photoshop" />
-            </div>
-            <span data-translate="photoshop_skill">Adobe Photoshop</span>
-            <div class="percent">80%</div>
+        <div class="skill design" style="--color: #31a8ff; --percent: 80%">
+          <div class="icon-wrapper">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png"
+              alt="Photoshop"
+            />
+          </div>
+          <span data-translate="photoshop_skill">Adobe Photoshop</span>
+          <div class="percent">80%</div>
         </div>
-    </div> 
-</section>
-<section class="projects" id="projects" style="scroll-margin-top: 700px;">
-    <div class="stars-bg"></div>
-    <h2 data-translate="projects_title">My Projects</h2>
-    <div class="projects-container">
+      </div>
+    </section>
+    <section class="projects" id="projects" style="scroll-margin-top: 700px">
+      <div class="stars-bg"></div>
+      <h2 data-translate="projects_title">My Projects</h2>
+      <div class="projects-container">
         <div class="project-card">
-            <img src="imegas/callculater.jpg" alt="Calculator App" />
-            <div class="project-content">
-                <h3 class="project-title" data-translate="project1_title">Calculator App</h3>
-                <p class="project-description" data-translate="project1_desc">A simple and user-friendly calculator application.</p>
-                <a href="https://mohamed-sayed239.github.io/calculator/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <img src="imegas/perfiom.jpg" alt="Perfume Store" />
-            <div class="project-content">
-                <h3 class="project-title" data-translate="project2_title">Perfume Store</h3>
-                <p class="project-description" data-translate="project2_desc">An e-commerce store for selling perfumes online.</p>
-                <a href="https://mohamed-sayed239.github.io/Perfume-Store/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <img src="imegas/homewer.jpg" alt="Homeware Products" />
-            <div class="project-content">
-                <h3 class="project-title" data-translate="project3_title">Homeware Products</h3>
-                <p class="project-description" data-translate="project3_desc">A website showcasing homeware products.</p>
-                <a href="https://example.com/homeware" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <img src="imegas/office.jpg" alt="Law Firm Website" />
-            <div class="project-content">
-                <h3 class="project-title" data-translate="project4_title">Law Firm Website</h3>
-                <p class="project-description" data-translate="project4_desc">An informational website for a law firm.</p>
-                <a href="https://example.com/lawfirm" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <img src="imegas/moonlight.jpg" alt="Factory Introduction" />
-            <div class="project-content">
-                <h3 class="project-title" data-translate="project5_title">Factory Introduction</h3>
-                <p class="project-description" data-translate="project5_desc">A website introducing a factory and its products.</p>
-                <a href="https://mohamed-sayed239.github.io/moonlight/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <img src="imegas/coffee.jpg" alt="Factory Platform" />
-            <div class="project-content">
-                <h3 class="project-title" data-translate="project6_title">Factory Platform</h3>
-                <p class="project-description" data-translate="project6_desc">A platform to manage factory operations.</p>
-                <a href="https://mohamed-sayed239.github.io/coffee/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="testimonials" id="testimonials" style="scroll-margin-top: 200px;">
-    <h2 data-translate="testimonials_title">آراء العملاء</h2>
-    <div class="testimonials-container">
-        <div class="testimonial-card">
-            <p class="testimonial-text" data-translate="testimonial1_text">
-                "تم تنفيذ مشروع تصميم موقع إلكتروني خاص بالبرفانات بالتعاون مع المبرمج و المصمم محمد سيد 
-                قدم شغل احترافي بجودة عالية، وكان ملتزم بالمواعيد ومرن جدًا في التعامل.
-                أنصح بالتعامل معاه، وشكرًا على المجهود الكبير اللي قدمه في المشروع."
+          <img src="imegas/homewear.jpg" alt="Homeware Products" />
+          <div class="project-content">
+            <h3 class="project-title" data-translate="project1_title">
+              Homeware Products
+            </h3>
+            <p class="project-description" data-translate="project1_desc">
+              A website showcasing homeware products.
             </p>
-            <div class="stars">★★★★★</div>
-            <h3 class="client-name" data-translate="client1_name">ياسين جرانه</h3>
+            <a
+              href="https://riqahhomewear.shop"
+              target="_blank"
+              class="project-btn"
+              data-translate="view_project"
+              >View Project</a
+            >
+          </div>
         </div>
-        
-        <div class="testimonial-card">
-            <p class="testimonial-text" data-translate="testimonial2_text">
-                "اشتغلت مع محمد سيد على تصميم موقع مون لايت، وكان فعلاً شغله ممتاز.
-                التعامل معاه سهل ومحترف، ودايمًا متعاون في أي تعديل.
-                سلّم الشغل في ميعاده والموقع طلع بالشكل اللي كنا محتاجينه بالضبط.
-                أنصح أي حد محتاج شغل نظيف ومريح يتعامل معاه."
+
+        <div class="project-card">
+          <img src="imegas/perfiom.jpg" alt="Perfume Store" />
+          <div class="project-content">
+            <h3 class="project-title" data-translate="project2_title">
+              Perfume Store
+            </h3>
+            <p class="project-description" data-translate="project2_desc">
+              An e-commerce store for selling perfumes online.
             </p>
-            <div class="stars">★★★★★</div>
-            <h3 class="client-name" data-translate="client2_name">هاله</h3>
+            <a
+              href="https://mohamed-sayed239.github.io/Perfume-Store/"
+              target="_blank"
+              class="project-btn"
+              data-translate="view_project"
+              >View Project</a
+            >
+          </div>
         </div>
-        
-        <div class="testimonial-card">
-            <p class="testimonial-text" data-translate="testimonial3_text">
-                "أنا صاحب براند Riqah – Homewear Store، وكمان اللي صممت وبرمجت الموقع بنفسي.
-                كنت حابب أطلع بتصميم بسيط وراقي يعبر عن روح البراند، والحمد لله قدرت أحقق اللي في بالي.
-                راضي جدًا عن النتيجة، والموقع فعلاً ساعدني أقدّم شغلي بشكل احترافي."
+
+        <div class="project-card">
+          <img src="imegas/moonlight.jpg" alt="Moonlight Brand Website" />
+          <div class="project-content">
+            <h3 class="project-title" data-translate="project3_title">
+              Moonlight Brand
+            </h3>
+            <p class="project-description" data-translate="project3_desc">
+              A stylish landing page for a fashion or lifestyle brand, featuring
+              elegant product displays and smooth user experience.
             </p>
-            <div class="stars">★★★★★</div>
-            <h3 class="client-name" data-translate="client3_name">محمد سيد</h3>
+            <a
+              href="https://mohamed-sayed239.github.io/moonlight/"
+              target="_blank"
+              class="project-btn"
+              data-translate="view_project"
+              >View Project</a
+            >
+          </div>
         </div>
-    </div>
-</section>
-<section class="services" id="services" style="scroll-margin-top: 100px;">
-    <h2 data-translate="services_title">الخدمات</h2>
-    <div class="services-container">
+
+        <div class="project-card">
+          <img src="imegas/office.jpg" alt="Law Firm Website" />
+          <div class="project-content">
+            <h3 class="project-title" data-translate="project4_title">
+              Law Firm Website
+            </h3>
+            <p class="project-description" data-translate="project4_desc">
+              An informational website for a law firm.
+            </p>
+            <a
+              href="https://example.com/lawfirm"
+              target="_blank"
+              class="project-btn"
+              data-translate="view_project"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="imegas/portfolio.jpg" alt="Personal Portfolio Website" />
+          <div class="project-content">
+            <h3 class="project-title" data-translate="project5_title">
+              Personal Portfolio
+            </h3>
+            <p class="project-description" data-translate="project5_desc">
+              A personal website showcasing my web development and design
+              projects, skills, and contact information.
+            </p>
+            <a
+              href="https://mohamed-sayed239.github.io/my-portfoilo/"
+              target="_blank"
+              class="project-btn"
+              data-translate="view_project"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="imegas/coffee.jpg" alt="Coffee Shop Website" />
+          <div class="project-content">
+            <h3 class="project-title" data-translate="project6_title">
+              Coffee Shop Website
+            </h3>
+            <p class="project-description" data-translate="project6_desc">
+              A modern and responsive website for a coffee shop, featuring
+              menus, about section, products, and customer reviews.
+            </p>
+            <a
+              href="https://mohamed-sayed239.github.io/coffee/"
+              target="_blank"
+              class="project-btn"
+              data-translate="view_project"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="imegas/callculater.jpg" alt="Calculator App" />
+          <div class="project-content">
+            <h3 class="project-title" data-translate="project7_title">
+              Calculator App
+            </h3>
+            <p class="project-description" data-translate="project7_desc">
+              A simple and user-friendly calculator application.
+            </p>
+            <a
+              href="https://mohamed-sayed239.github.io/calculator/"
+              target="_blank"
+              class="project-btn"
+              data-translate="view_project"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="testimonials"
+      id="testimonials"
+      style="scroll-margin-top: 200px"
+    >
+      <h2 data-translate="testimonials_title">آراء العملاء</h2>
+      <div class="testimonials-container">
+        <div class="testimonial-card">
+          <p class="testimonial-text" data-translate="testimonial1_text">
+            "تم تنفيذ مشروع تصميم موقع إلكتروني خاص بالبرفانات بالتعاون مع
+            المبرمج و المصمم محمد سيد قدم شغل احترافي بجودة عالية، وكان ملتزم
+            بالمواعيد ومرن جدًا في التعامل. أنصح بالتعامل معاه، وشكرًا على
+            المجهود الكبير اللي قدمه في المشروع."
+          </p>
+          <div class="stars">★★★★★</div>
+          <h3 class="client-name" data-translate="client1_name">ياسين جرانه</h3>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text" data-translate="testimonial2_text">
+            "اشتغلت مع محمد سيد على تصميم موقع مون لايت، وكان فعلاً شغله ممتاز.
+            التعامل معاه سهل ومحترف، ودايمًا متعاون في أي تعديل. سلّم الشغل في
+            ميعاده والموقع طلع بالشكل اللي كنا محتاجينه بالضبط. أنصح أي حد محتاج
+            شغل نظيف ومريح يتعامل معاه."
+          </p>
+          <div class="stars">★★★★★</div>
+          <h3 class="client-name" data-translate="client2_name">هاله</h3>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text" data-translate="testimonial3_text">
+            "أنا صاحب براند Riqah – Homewear Store، وكمان اللي صممت وبرمجت
+            الموقع بنفسي. كنت حابب أطلع بتصميم بسيط وراقي يعبر عن روح البراند،
+            والحمد لله قدرت أحقق اللي في بالي. راضي جدًا عن النتيجة، والموقع
+            فعلاً ساعدني أقدّم شغلي بشكل احترافي."
+          </p>
+          <div class="stars">★★★★★</div>
+          <h3 class="client-name" data-translate="client3_name">محمد سيد</h3>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services" style="scroll-margin-top: 100px">
+      <h2 data-translate="services_title">الخدمات</h2>
+      <div class="services-container">
         <div class="service-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/2721/2721295.png" alt="UI Design">
-            <h3 class="service-title" data-translate="service1_title">تصميم واجهات المواقع</h3>
-            <p class="service-description" data-translate="service1_desc">تصميم واجهات عصرية، متجاوبة وسلسة لتحسين تجربة المستخدم وتحقيق هوية بصرية جذابة.</p>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2721/2721295.png"
+            alt="UI Design"
+          />
+          <h3 class="service-title" data-translate="service1_title">
+            تصميم واجهات المواقع
+          </h3>
+          <p class="service-description" data-translate="service1_desc">
+            تصميم واجهات عصرية، متجاوبة وسلسة لتحسين تجربة المستخدم وتحقيق هوية
+            بصرية جذابة.
+          </p>
         </div>
 
         <div class="service-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" alt="Web Development">
-            <h3 class="service-title" data-translate="service2_title">برمجة وتطوير المواقع</h3>
-            <p class="service-description" data-translate="service2_desc">برمجة مواقع ديناميكية قوية باستخدام أحدث التقنيات مثل HTML, CSS, JS, Django.</p>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/906/906324.png"
+            alt="Web Development"
+          />
+          <h3 class="service-title" data-translate="service2_title">
+            برمجة وتطوير المواقع
+          </h3>
+          <p class="service-description" data-translate="service2_desc">
+            برمجة مواقع ديناميكية قوية باستخدام أحدث التقنيات مثل HTML, CSS, JS,
+            Django.
+          </p>
         </div>
 
         <div class="service-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Branding">
-            <h3 class="service-title" data-translate="service3_title">تصميم الشعارات والهويات</h3>
-            <p class="service-description" data-translate="service3_desc">إنشاء شعارات احترافية وهوية بصرية متكاملة تناسب نشاطك وتعزز ثقة العملاء بك.</p>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            alt="Branding"
+          />
+          <h3 class="service-title" data-translate="service3_title">
+            تصميم الشعارات والهويات
+          </h3>
+          <p class="service-description" data-translate="service3_desc">
+            إنشاء شعارات احترافية وهوية بصرية متكاملة تناسب نشاطك وتعزز ثقة
+            العملاء بك.
+          </p>
         </div>
-    </div>
-</section>
-<section class="qastion" id="qastion" style="scroll-margin-top: 100px;">
-  <div class="faq">
-    <h2 data-translate="faq_title">Frequently Asked Questions</h2>
-    <input type="text" class="faq-search" placeholder="Search questions..." data-translate="faq_placeholder" />
+      </div>
+    </section>
+    <section class="qastion" id="qastion" style="scroll-margin-top: 100px">
+      <div class="faq">
+        <h2 data-translate="faq_title">Frequently Asked Questions</h2>
+        <input
+          type="text"
+          class="faq-search"
+          placeholder="Search questions..."
+          data-translate="faq_placeholder"
+        />
 
-    <div class="faq-item">
-      <button class="faq-question">
-        <span data-translate="faq1_q">How long does it take to complete a project?</span>
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p data-translate="faq1_a">Typically, projects take between 2 to 6 weeks depending on complexity and requirements.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <span data-translate="faq2_q">Do you offer post-launch support?</span>
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p data-translate="faq2_a">Yes, I provide maintenance and support packages after project delivery.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <span data-translate="faq3_q">What technologies do you specialize in?</span>
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p data-translate="faq3_a">I specialize in HTML, CSS, JavaScript, React, Python, and UI/UX design.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <span data-translate="faq4_q">Can I request changes after delivery?</span>
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p data-translate="faq4_a">Yes, minor revisions are included. Major changes require additional discussion.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <span data-translate="faq5_q">What is your payment process?</span>
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p data-translate="faq5_a">50% upfront deposit, 50% upon completion. Flexible terms available.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <span data-translate="faq6_q">Can you redesign existing websites?</span>
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p data-translate="faq6_a">Yes, I can modernize and improve your current website's design and performance.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <span data-translate="faq7_q">Will my website be mobile-friendly?</span>
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p data-translate="faq7_a">Absolutely. All websites I build are fully responsive for all devices.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <span data-translate="faq8_q">Can you integrate contact forms?</span>
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p data-translate="faq8_a">Yes, I can add forms with email notifications and validation.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <span data-translate="faq9_q">Do you work internationally?</span>
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p data-translate="faq9_a">Yes, I work with clients worldwide via Zoom, email, or other platforms.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <span data-translate="faq10_q">Do you provide SEO services?</span>
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p data-translate="faq10_a">Basic SEO is included. For advanced strategies, I can refer specialists.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <span data-translate="faq11_q">How do we communicate?</span>
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p data-translate="faq11_a">Email, WhatsApp, Zoom, or any platform you prefer with regular updates.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <span data-translate="faq12_q">Can you help with hosting?</span>
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p data-translate="faq12_a">Yes, I can guide you through hosting options and domain setup.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="contact-section" id="contact" style="scroll-margin-top: 100px;">
-  <!-- Star Background Elements (remain unchanged) -->
-  <div class="section-banner">
-    <!-- All star elements from original code -->
-  </div>
-  
-  <div class="section-banner-sun">
-    <!-- All sun elements from original code -->
-  </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-translate="faq1_q"
+              >How long does it take to complete a project?</span
+            >
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-translate="faq1_a">
+              Typically, projects take between 2 to 6 weeks depending on
+              complexity and requirements.
+            </p>
+          </div>
+        </div>
 
-  <!-- Space Background Elements -->
-  <div class="cosmic-background">
-    <div class="cosmic-planet"></div>
-    <div class="cosmic-star cosmic-star-1"></div>
-    <div class="cosmic-star cosmic-star-2"></div>
-    <div class="cosmic-star cosmic-star-3"></div>
-    <div class="cosmic-star cosmic-star-4"></div>
-    <div class="cosmic-star cosmic-star-5"></div>
-    <div class="cosmic-asteroid cosmic-asteroid-1"></div>
-    <div class="cosmic-asteroid cosmic-asteroid-2"></div>
-    <div class="cosmic-asteroid cosmic-asteroid-3"></div>
-    <div class="cosmic-satellite">📡</div>
-  </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-translate="faq2_q"
+              >Do you offer post-launch support?</span
+            >
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-translate="faq2_a">
+              Yes, I provide maintenance and support packages after project
+              delivery.
+            </p>
+          </div>
+        </div>
 
-  <!-- Bilingual Messages -->
-  <div class="cosmic-message message-1" data-translate="cosmic_msg1">رسالة ١ 🚀</div>
-  <div class="cosmic-message message-2" data-translate="cosmic_msg2">رسالة ٢ 🌟</div>
-  <div class="cosmic-message message-3" data-translate="cosmic_msg3">رسالة ٣ 🪐</div>
-  <div class="cosmic-message message-4" data-translate="cosmic_msg4">رسالة ٤ 🌌</div>
-  <div class="cosmic-message message-5" data-translate="cosmic_msg5">رسالة ٥ ☄️</div>
-  <div class="cosmic-message message-6" data-translate="cosmic_msg6">رسالة ٦ 💫</div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-translate="faq3_q"
+              >What technologies do you specialize in?</span
+            >
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-translate="faq3_a">
+              I specialize in HTML, CSS, JavaScript, React, Python, and UI/UX
+              design.
+            </p>
+          </div>
+        </div>
 
-  <!-- Contact Form -->
-  <div class="contact-container">
-    <h2 class="contact-title" data-translate="contact_title">Contact Me</h2>
-    <form class="contact-form" id="contactForm">
-      <input type="text" name="name" placeholder="Your Name" required class="form-input" data-translate="name_placeholder" />
-      <input type="email" name="email" placeholder="Your Email" required class="form-input" data-translate="email_placeholder" />
-      <textarea name="message" rows="5" placeholder="Your Message" required class="form-textarea" data-translate="message_placeholder"></textarea>
-      <button type="submit" class="submit-btn cosmic-btn">
-        <span data-translate="send_btn">Send Message</span>
-        <div class="btn-rocket">🚀</div>
-      </button>
-    </form>
-  </div>
-</section>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-translate="faq4_q"
+              >Can I request changes after delivery?</span
+            >
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-translate="faq4_a">
+              Yes, minor revisions are included. Major changes require
+              additional discussion.
+            </p>
+          </div>
+        </div>
 
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-about">
-      <img src="imegas/logo.png" alt="logo" />
-      <p>Web Developer &amp; UI/UX Designer</p>
-    </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-translate="faq5_q">What is your payment process?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-translate="faq5_a">
+              50% upfront deposit, 50% upon completion. Flexible terms
+              available.
+            </p>
+          </div>
+        </div>
 
-    <div class="footer-contact">
-      <h4>Contact Me</h4>
-      <address>
-        <p>Email: <a href="mailto:mohamedsyid94@gmail.com">mohamedsyid94@gmail.com</a></p>
-        <p>Phone: <a href="tel:+201003073577">+20 100 307 3577</a></p>
-      </address>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-translate="faq6_q"
+              >Can you redesign existing websites?</span
+            >
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-translate="faq6_a">
+              Yes, I can modernize and improve your current website's design and
+              performance.
+            </p>
+          </div>
+        </div>
 
-      <div class="socials">
-        <a href="https://facebook.com/yourusername" aria-label="Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://linkedin.com/in/yourusername" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-translate="faq7_q"
+              >Will my website be mobile-friendly?</span
+            >
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-translate="faq7_a">
+              Absolutely. All websites I build are fully responsive for all
+              devices.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-translate="faq8_q"
+              >Can you integrate contact forms?</span
+            >
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-translate="faq8_a">
+              Yes, I can add forms with email notifications and validation.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-translate="faq9_q">Do you work internationally?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-translate="faq9_a">
+              Yes, I work with clients worldwide via Zoom, email, or other
+              platforms.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-translate="faq10_q">Do you provide SEO services?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-translate="faq10_a">
+              Basic SEO is included. For advanced strategies, I can refer
+              specialists.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-translate="faq11_q">How do we communicate?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-translate="faq11_a">
+              Email, WhatsApp, Zoom, or any platform you prefer with regular
+              updates.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-translate="faq12_q">Can you help with hosting?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-translate="faq12_a">
+              Yes, I can guide you through hosting options and domain setup.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
+    <section
+      class="contact-section"
+      id="contact"
+      style="scroll-margin-top: 100px"
+    >
+      <!-- Star Background Elements (remain unchanged) -->
+      <div class="section-banner">
+        <!-- All star elements from original code -->
+      </div>
 
-  <div class="footer-bottom">
-    <p>© 2025 Mohamed Sayed. All rights reserved.</p>
-  </div>
-</footer>
+      <div class="section-banner-sun">
+        <!-- All sun elements from original code -->
+      </div>
+
+      <!-- Space Background Elements -->
+      <div class="cosmic-background">
+        <div class="cosmic-planet"></div>
+        <div class="cosmic-star cosmic-star-1"></div>
+        <div class="cosmic-star cosmic-star-2"></div>
+        <div class="cosmic-star cosmic-star-3"></div>
+        <div class="cosmic-star cosmic-star-4"></div>
+        <div class="cosmic-star cosmic-star-5"></div>
+        <div class="cosmic-asteroid cosmic-asteroid-1"></div>
+        <div class="cosmic-asteroid cosmic-asteroid-2"></div>
+        <div class="cosmic-asteroid cosmic-asteroid-3"></div>
+        <div class="cosmic-satellite">📡</div>
+      </div>
+
+      <!-- Bilingual Messages -->
+      <div class="cosmic-message message-1" data-translate="cosmic_msg1">
+        رسالة ١ 🚀
+      </div>
+      <div class="cosmic-message message-2" data-translate="cosmic_msg2">
+        رسالة ٢ 🌟
+      </div>
+      <div class="cosmic-message message-3" data-translate="cosmic_msg3">
+        رسالة ٣ 🪐
+      </div>
+      <div class="cosmic-message message-4" data-translate="cosmic_msg4">
+        رسالة ٤ 🌌
+      </div>
+      <div class="cosmic-message message-5" data-translate="cosmic_msg5">
+        رسالة ٥ ☄️
+      </div>
+      <div class="cosmic-message message-6" data-translate="cosmic_msg6">
+        رسالة ٦ 💫
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-container">
+        <h2 class="contact-title" data-translate="contact_title">Contact Me</h2>
+        <form class="contact-form" id="contactForm">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="form-input"
+            data-translate="name_placeholder"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="form-input"
+            data-translate="email_placeholder"
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+            class="form-textarea"
+            data-translate="message_placeholder"
+          ></textarea>
+          <button type="submit" class="submit-btn cosmic-btn">
+            <span data-translate="send_btn">Send Message</span>
+            <div class="btn-rocket">🚀</div>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <img src="imegas/logo.png" alt="logo" />
+          <p>Web Developer &amp; UI/UX Designer</p>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Me</h4>
+          <address>
+            <p>
+              Email:
+              <a href="mailto:mohamedsyid94@gmail.com"
+                >mohamedsyid94@gmail.com</a
+              >
+            </p>
+            <p>Phone: <a href="tel:+201003073577">+20 100 307 3577</a></p>
+          </address>
+
+          <div class="socials">
+            <a href="https://facebook.com/yourusername" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/yourusername"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Mohamed Sayed. All rights reserved.</p>
+      </div>
+    </footer>
     <script src="translations.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
