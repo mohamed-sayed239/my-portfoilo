@@ -127,7 +127,7 @@
           >
             <button class="btn-cv" type="button">
               <span class="btn-cv__text" data-translate="download_btn"
-                >Download</span
+                >View My Cv</span
               >
               <span class="btn-cv__icon"
                 ><svg
@@ -415,209 +415,457 @@
         </div>
       </div>
     </section>
-    <section class="projects" id="projects" style="scroll-margin-top: 700px">
-      <div class="stars-bg"></div>
-      <h2 data-translate="projects_title">My Projects</h2>
-      <div class="projects-container">
-        <div class="project-card">
-          <img src="imegas/homewear.jpg" alt="Homeware Products" />
-          <div class="project-content">
-            <h3 class="project-title" data-translate="project1_title">
-              Homeware Products
-            </h3>
-            <p class="project-description" data-translate="project1_desc">
-              A website showcasing homeware products.
-            </p>
-            <a
-              href="https://riqahhomewear.shop"
-              target="_blank"
-              class="project-btn"
-              data-translate="view_project"
-              >View Project</a
-            >
-          </div>
-        </div>
+  <section class="projects" id="projects" style="scroll-margin-top: 700px">
+    <!-- تأثير الثلج المتساقط -->
+<div class="snowfall" id="snowfall"></div>
+<div class="wind-effect"></div>
+<div class="snow-accumulation"></div>
 
-      <div class="project-card">
-  <img src="imegas/codexisit.jpg" alt="Codexite Project" />
-  <div class="project-content">
-    <h3 class="project-title" data-translate="project_codexite_title">
-      Codexite
-    </h3>
-    <p class="project-description" data-translate="project_codexite_desc">
-      A modern and responsive website for a software startup offering web development services.
-    </p>
-    <a
-      href="https://mohamed-sayed239.github.io/codexite/"
-      target="_blank"
-      class="project-btn"
-      data-translate="view_project"
-    >
-      View Project
-    </a>
+  <div class="stars-bg"></div>
+  <h2 data-translate="projects_title">My Projects</h2>
+  <div class="projects-container">
+    
+    <!-- مشروع 1: Homeware Products -->
+    <div class="project-card">
+      <img src="imegas/homewear.png" alt="Homeware Products" />
+      <div class="project-content">
+        <h3 class="project-title" data-translate="project1_title">Homeware Products</h3>
+        <p class="project-description" data-translate="project1_desc">A website showcasing homeware products.</p>
+        <div class="project-technologies">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Django</span>
+        </div>
+        <a href="https://riqahhomewear.shop" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
+      </div>
+    </div>
+
+    <!-- مشروع 2: Courses Platform -->
+    <div class="project-card">
+      <img src="imegas/courses_moon light.jpg" alt="Courses Platform Project" />
+      <div class="project-content">
+        <h3 class="project-title" data-translate="project_courses_title">Courses Platform</h3>
+        <p class="project-description" data-translate="project_courses_desc">A modern and responsive platform for online courses, offering a wide range of learning materials and tutorials.</p>
+        <div class="project-technologies">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <a href="https://mohamed-sayed239.github.io/moon_light/courses/main.html" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
+      </div>
+    </div>
+
+    <!-- مشروع 3: Codexite -->
+    <div class="project-card">
+      <img src="imegas/codexisit.jpg" alt="Codexite Project" />
+      <div class="project-content">
+        <h3 class="project-title" data-translate="project_codexite_title">Codexite</h3>
+        <p class="project-description" data-translate="project_codexite_desc">A modern and responsive website for a software startup offering web development services.</p>
+        <div class="project-technologies">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <a href="https://mohamed-sayed239.github.io/codexite/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
+      </div>
+    </div>
+
+    <!-- مشروع 4: Fitness & Nutrition Planner -->
+    <div class="project-card">
+      <img src="imegas/fitzone.png" alt="Fitness & Nutrition App" />
+      <div class="project-content">
+        <h3 class="project-title" data-translate="project_fitness_title">Fitness & Nutrition Planner</h3>
+        <p class="project-description" data-translate="project_fitness_desc">A web app that helps users create personalized workout and nutrition plans to achieve their fitness goals.</p>
+        <div class="project-technologies">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Tailwind CSS</span>
+        </div>
+        <a href="https://mohamed-sayed239.github.io/fitness-nutrition/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
+      </div>
+    </div>
+
+    <!-- مشروع 5: Fun Game -->
+    <div class="project-card">
+      <img src="imegas/game.jpg" alt="Fun Game" />
+      <div class="project-content">
+        <h3 class="project-title" data-translate="project_game_title">Fun Game</h3>
+        <p class="project-description" data-translate="project_game_desc">An interactive and entertaining game built with HTML, CSS, and JavaScript for all ages.</p>
+        <div class="project-technologies">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Tailwind CSS</span>
+        </div>
+        <a href="https://mohamed-sayed239.github.io/lumiquest-game/#/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
+      </div>
+    </div>
+
+    <!-- مشروع 6: Perfume Store -->
+    <div class="project-card">
+      <img src="imegas/perfiom.jpg" alt="Perfume Store" />
+      <div class="project-content">
+        <h3 class="project-title" data-translate="project2_title">Perfume Store</h3>
+        <p class="project-description" data-translate="project2_desc">An e-commerce store for selling perfumes online.</p>
+        <div class="project-technologies">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <a href="https://mohamed-sayed239.github.io/Perfume-Store/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
+      </div>
+    </div>
+
+    <!-- مشروع 7: Moonlight Brand -->
+    <div class="project-card">
+      <img src="imegas/moonlight.png" alt="Moonlight Brand Website" />
+      <div class="project-content">
+        <h3 class="project-title" data-translate="project3_title">Moonlight Brand</h3>
+        <p class="project-description" data-translate="project3_desc">A stylish landing page for a fashion or lifestyle brand, featuring elegant product displays and smooth user experience.</p>
+        <div class="project-technologies">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <a href="https://mohamed-sayed239.github.io/moonlight/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
+      </div>
+    </div>
+
+    <!-- مشروع 8: Law Firm Website -->
+    <div class="project-card">
+      <img src="imegas/office.png" alt="Law Firm Website" />
+      <div class="project-content">
+        <h3 class="project-title" data-translate="project4_title">Law Firm Website</h3>
+        <p class="project-description" data-translate="project4_desc">An informational website for a law firm.</p>
+        <div class="project-technologies">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Django</span>
+        </div>
+        <a href="https://example.com/lawfirm" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
+      </div>
+    </div>
+
+    <!-- مشروع 9: Personal Portfolio -->
+    <div class="project-card">
+      <img src="imegas/portfolio.png" alt="Personal Portfolio Website" />
+      <div class="project-content">
+        <h3 class="project-title" data-translate="project5_title">Personal Portfolio</h3>
+        <p class="project-description" data-translate="project5_desc">A personal website showcasing my web development and design projects, skills, and contact information.</p>
+        <div class="project-technologies">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <a href="https://mohamed-sayed239.github.io/my-portfoilo/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
+      </div>
+    </div>
+
+    <!-- مشروع 10: Coffee Shop Website -->
+    <div class="project-card">
+      <img src="imegas/coffee.png" alt="Coffee Shop Website" />
+      <div class="project-content">
+        <h3 class="project-title" data-translate="project6_title">Coffee Shop Website</h3>
+        <p class="project-description" data-translate="project6_desc">A modern and responsive website for a coffee shop, featuring menus, about section, products, and customer reviews.</p>
+        <div class="project-technologies">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <a href="https://mohamed-sayed239.github.io/coffee/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
+      </div>
+    </div>
+
+    <!-- مشروع 11: Calculator App -->
+    <div class="project-card">
+      <img src="imegas/callculater.jpg" alt="Calculator App" />
+      <div class="project-content">
+        <h3 class="project-title" data-translate="project7_title">Calculator App</h3>
+        <p class="project-description" data-translate="project7_desc">A simple and user-friendly calculator application.</p>
+        <div class="project-technologies">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <a href="https://mohamed-sayed239.github.io/calculator/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
+      </div>
+    </div>
+
   </div>
-</div>
+</section>
+   <section class="testimonials" id="testimonials" style="scroll-margin-top: 200px">
+  <div class="testimonials-bg"></div>
+  <div class="testimonials-header">
+    <h2 data-translate="testimonials_title">آراء العملاء</h2>
+    <p class="subtitle" data-translate="testimonials_subtitle">تجارب حقيقية من مشاريع ناجحة</p>
+  </div>
+  
+  <div class="testimonials-container">
+    <!-- فلترة حسب المشروع -->
+    <div class="projects-filter">
+      <button class="filter-btn active" data-project="all" data-translate="filter_all">جميع المشاريع</button>
+      <button class="filter-btn" data-project="homeware" data-translate="filter_homeware">المنتجات المنزلية</button>
+      <button class="filter-btn" data-project="courses" data-translate="filter_courses">منصة الكورسات</button>
+      <button class="filter-btn" data-project="codexite" data-translate="filter_codexite">كوديكسايت</button>
+      <button class="filter-btn" data-project="fitness" data-translate="filter_fitness">التمارين والتغذية</button>
+      <button class="filter-btn" data-project="perfume" data-translate="filter_perfume">متجر العطور</button>
+      <button class="filter-btn" data-project="moonlight" data-translate="filter_moonlight">براند مون لايت</button>
+    </div>
 
-
-        <div class="project-card">
-          <img src="imegas/perfiom.jpg" alt="Perfume Store" />
-          <div class="project-content">
-            <h3 class="project-title" data-translate="project2_title">
-              Perfume Store
-            </h3>
-            <p class="project-description" data-translate="project2_desc">
-              An e-commerce store for selling perfumes online.
-            </p>
-            <a
-              href="https://mohamed-sayed239.github.io/Perfume-Store/"
-              target="_blank"
-              class="project-btn"
-              data-translate="view_project"
-              >View Project</a
-            >
+    <div class="testimonials-grid">
+      <!-- رأي 1 - مشروع المنتجات المنزلية -->
+      <div class="testimonial-card" data-project="homeware">
+        <div class="testimonial-header">
+          <div class="client-avatar">
+            <span>ي</span>
+          </div>
+          <div class="client-info">
+            <h3 class="client-name" data-translate="client_homeware_name">ياسين جرانه</h3>
+            <p class="client-title" data-translate="client_homeware_title">صاحب متجر Riqah Homewear</p>
+          </div>
+          <div class="project-badge">منتجات منزلية</div>
+        </div>
+        
+        <div class="stars">★★★★★</div>
+        
+        <p class="testimonial-text" data-translate="testimonial_homeware_text">
+          "محمد سيد قام بتطوير موقع متجرنا بالكامل بلغة Django مع واجهة تفاعلية رائعة. 
+          الموقع ساعدنا في زيادة المبيعات بنسبة 40% خلال أول شهرين. 
+          الالتزام بالمواعيد والاهتمام بالتفاصيل كان مميزًا جدًا."
+        </p>
+        
+        <div class="testimonial-stats">
+          <div class="stat">
+            <span class="stat-value">40%</span>
+            <span class="stat-label" data-translate="stat_sales">زيادة في المبيعات</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">15 يوم</span>
+            <span class="stat-label" data-translate="stat_delivery">تسليم المشروع</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">4.9</span>
+            <span class="stat-label" data-translate="stat_rating">التقييم العام</span>
           </div>
         </div>
-
-        <div class="project-card">
-          <img src="imegas/moonlight.jpg" alt="Moonlight Brand Website" />
-          <div class="project-content">
-            <h3 class="project-title" data-translate="project3_title">
-              Moonlight Brand
-            </h3>
-            <p class="project-description" data-translate="project3_desc">
-              A stylish landing page for a fashion or lifestyle brand, featuring
-              elegant product displays and smooth user experience.
-            </p>
-            <a
-              href="https://mohamed-sayed239.github.io/moonlight/"
-              target="_blank"
-              class="project-btn"
-              data-translate="view_project"
-              >View Project</a
-            >
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="imegas/office.jpg" alt="Law Firm Website" />
-          <div class="project-content">
-            <h3 class="project-title" data-translate="project4_title">
-              Law Firm Website
-            </h3>
-            <p class="project-description" data-translate="project4_desc">
-              An informational website for a law firm.
-            </p>
-            <a
-              href="https://example.com/lawfirm"
-              target="_blank"
-              class="project-btn"
-              data-translate="view_project"
-              >View Project</a
-            >
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="imegas/portfolio.jpg" alt="Personal Portfolio Website" />
-          <div class="project-content">
-            <h3 class="project-title" data-translate="project5_title">
-              Personal Portfolio
-            </h3>
-            <p class="project-description" data-translate="project5_desc">
-              A personal website showcasing my web development and design
-              projects, skills, and contact information.
-            </p>
-            <a
-              href="https://mohamed-sayed239.github.io/my-portfoilo/"
-              target="_blank"
-              class="project-btn"
-              data-translate="view_project"
-              >View Project</a
-            >
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="imegas/coffee.jpg" alt="Coffee Shop Website" />
-          <div class="project-content">
-            <h3 class="project-title" data-translate="project6_title">
-              Coffee Shop Website
-            </h3>
-            <p class="project-description" data-translate="project6_desc">
-              A modern and responsive website for a coffee shop, featuring
-              menus, about section, products, and customer reviews.
-            </p>
-            <a
-              href="https://mohamed-sayed239.github.io/coffee/"
-              target="_blank"
-              class="project-btn"
-              data-translate="view_project"
-              >View Project</a
-            >
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="imegas/callculater.jpg" alt="Calculator App" />
-          <div class="project-content">
-            <h3 class="project-title" data-translate="project7_title">
-              Calculator App
-            </h3>
-            <p class="project-description" data-translate="project7_desc">
-              A simple and user-friendly calculator application.
-            </p>
-            <a
-              href="https://mohamed-sayed239.github.io/calculator/"
-              target="_blank"
-              class="project-btn"
-              data-translate="view_project"
-              >View Project</a
-            >
-          </div>
+        
+        <div class="testimonial-footer">
+          <span class="date" data-translate="date_dec_2024">ديسمبر 2024</span>
+          <a href="#homeware-project" class="view-project-btn" data-translate="view_project">عرض المشروع</a>
         </div>
       </div>
-    </section>
-    <section
-      class="testimonials"
-      id="testimonials"
-      style="scroll-margin-top: 200px"
-    >
-      <h2 data-translate="testimonials_title">آراء العملاء</h2>
-      <div class="testimonials-container">
-        <div class="testimonial-card">
-          <p class="testimonial-text" data-translate="testimonial1_text">
-            "تم تنفيذ مشروع تصميم موقع إلكتروني خاص بالبرفانات بالتعاون مع
-            المبرمج و المصمم محمد سيد قدم شغل احترافي بجودة عالية، وكان ملتزم
-            بالمواعيد ومرن جدًا في التعامل. أنصح بالتعامل معاه، وشكرًا على
-            المجهود الكبير اللي قدمه في المشروع."
-          </p>
-          <div class="stars">★★★★★</div>
-          <h3 class="client-name" data-translate="client1_name">ياسين جرانه</h3>
-        </div>
 
-        <div class="testimonial-card">
-          <p class="testimonial-text" data-translate="testimonial2_text">
-            "اشتغلت مع محمد سيد على تصميم موقع مون لايت، وكان فعلاً شغله ممتاز.
-            التعامل معاه سهل ومحترف، ودايمًا متعاون في أي تعديل. سلّم الشغل في
-            ميعاده والموقع طلع بالشكل اللي كنا محتاجينه بالضبط. أنصح أي حد محتاج
-            شغل نظيف ومريح يتعامل معاه."
-          </p>
-          <div class="stars">★★★★★</div>
-          <h3 class="client-name" data-translate="client2_name">هاله</h3>
+      <!-- رأي 2 - مشروع منصة الكورسات -->
+      <div class="testimonial-card" data-project="courses">
+        <div class="testimonial-header">
+          <div class="client-avatar">
+            <span>ه</span>
+          </div>
+          <div class="client-info">
+            <h3 class="client-name" data-translate="client_courses_name">هالة محمد</h3>
+            <p class="client-title" data-translate="client_courses_title">مديرة منصة Moon Light Courses</p>
+          </div>
+          <div class="project-badge">منصة تعليمية</div>
         </div>
-
-        <div class="testimonial-card">
-          <p class="testimonial-text" data-translate="testimonial3_text">
-            "أنا صاحب براند Riqah – Homewear Store، وكمان اللي صممت وبرمجت
-            الموقع بنفسي. كنت حابب أطلع بتصميم بسيط وراقي يعبر عن روح البراند،
-            والحمد لله قدرت أحقق اللي في بالي. راضي جدًا عن النتيجة، والموقع
-            فعلاً ساعدني أقدّم شغلي بشكل احترافي."
-          </p>
-          <div class="stars">★★★★★</div>
-          <h3 class="client-name" data-translate="client3_name">محمد سيد</h3>
+        
+        <div class="stars">★★★★★</div>
+        
+        <p class="testimonial-text" data-translate="testimonial_courses_text">
+          "المشروع تم تنفيذه باستخدام HTML, CSS, JavaScript مع تصميم متجاوب رائع. 
+          المنصة الآن تستقبل أكثر من 1000 طالب شهريًا. التصميم سهل الاستخدام وسلس، 
+          والطلاب دائمًا يمدحون تجربة المستخدم الممتازة."
+        </p>
+        
+        <div class="testimonial-stats">
+          <div class="stat">
+            <span class="stat-value">1000+</span>
+            <span class="stat-label" data-translate="stat_students">طالب شهريًا</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">95%</span>
+            <span class="stat-label" data-translate="stat_satisfaction">رضا العملاء</span>
+          </div>
+        </div>
+        
+        <div class="testimonial-footer">
+          <span class="date" data-translate="date_nov_2024">نوفمبر 2024</span>
+          <a href="#courses-project" class="view-project-btn" data-translate="view_project">عرض المشروع</a>
         </div>
       </div>
-    </section>
+
+      <!-- رأي 3 - مشروع كوديكسايت -->
+      <div class="testimonial-card" data-project="codexite">
+        <div class="testimonial-header">
+          <div class="client-avatar">
+            <span>أ</span>
+          </div>
+          <div class="client-info">
+            <h3 class="client-name" data-translate="client_codexite_name">أحمد خالد</h3>
+            <p class="client-title" data-translate="client_codexite_title">المؤسس والرئيس التنفيذي</p>
+          </div>
+          <div class="project-badge">شركة برمجيات</div>
+        </div>
+        
+        <div class="stars">★★★★★</div>
+        
+        <p class="testimonial-text" data-translate="testimonial_codexite_text">
+          "موقع Codexite كان تحديًا كبيرًا تم تنفيذه بكفاءة عالية باستخدام تقنيات متقدمة. 
+          الموقع ساعدنا في الحصول على 50 عميل جديد خلال الربع الأول. 
+          السرعة والأداء المتميزان كانا من أهم نقاط القوة في المشروع."
+        </p>
+        
+        <div class="testimonial-stats">
+          <div class="stat">
+            <span class="stat-value">50+</span>
+            <span class="stat-label" data-translate="stat_clients">عميل جديد</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">2.3 ثانية</span>
+            <span class="stat-label" data-translate="stat_load_time">وقت التحميل</span>
+          </div>
+        </div>
+        
+        <div class="testimonial-footer">
+          <span class="date" data-translate="date_oct_2024">أكتوبر 2024</span>
+          <a href="#codexite-project" class="view-project-btn" data-translate="view_project">عرض المشروع</a>
+        </div>
+      </div>
+
+      <!-- رأي 4 - مشروع التمارين والتغذية -->
+      <div class="testimonial-card" data-project="fitness">
+        <div class="testimonial-header">
+          <div class="client-avatar">
+            <span>م</span>
+          </div>
+          <div class="client-info">
+            <h3 class="client-name" data-translate="client_fitness_name">محمود علي</h3>
+            <p class="client-title" data-translate="client_fitness_title">مدرب لياقة بدنية</p>
+          </div>
+          <div class="project-badge">تطبيق رياضي</div>
+        </div>
+        
+        <div class="stars">★★★★★</div>
+        
+        <p class="testimonial-text" data-translate="testimonial_fitness_text">
+          "التطبيق تم بناؤه باستخدام React و Tailwind CSS وهو يوفر تجربة مستخدم فريدة. 
+          أكثر من 5000 مستخدم مسجل يستفيدون من خطط التمارين والتغذية المخصصة. 
+          الأداء سريع والواجهة بديهية وسهلة الاستخدام."
+        </p>
+        
+        <div class="testimonial-stats">
+          <div class="stat">
+            <span class="stat-value">5000+</span>
+            <span class="stat-label" data-translate="stat_users">مستخدم نشط</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">4.8</span>
+            <span class="stat-label" data-translate="stat_app_rating">تقييم التطبيق</span>
+          </div>
+        </div>
+        
+        <div class="testimonial-footer">
+          <span class="date" data-translate="date_sep_2024">سبتمبر 2024</span>
+          <a href="#fitness-project" class="view-project-btn" data-translate="view_project">عرض المشروع</a>
+        </div>
+      </div>
+
+      <!-- رأي 5 - مشروع متجر العطور -->
+      <div class="testimonial-card" data-project="perfume">
+        <div class="testimonial-header">
+          <div class="client-avatar">
+            <span>س</span>
+          </div>
+          <div class="client-info">
+            <h3 class="client-name" data-translate="client_perfume_name">سارة أحمد</h3>
+            <p class="client-title" data-translate="client_perfume_title">مالكة متجر العطور</p>
+          </div>
+          <div class="project-badge">متجر إلكتروني</div>
+        </div>
+        
+        <div class="stars">★★★★★</div>
+        
+        <p class="testimonial-text" data-translate="testimonial_perfume_text">
+          "التصميم العصري والوظائف المتقدمة لمتجر العطور ساعدت في مضاعفة المبيعات. 
+          نظام الدفع سهل وآمن، وإدارة المنتجات بسيطة وفعالة. 
+          العملاء يحبون التصميم الأنيق وسهولة التصفح."
+        </p>
+        
+        <div class="testimonial-stats">
+          <div class="stat">
+            <span class="stat-value">3x</span>
+            <span class="stat-label" data-translate="stat_growth">نمو المبيعات</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">98%</span>
+            <span class="stat-label" data-translate="stat_positive_feedback">تقييم إيجابي</span>
+          </div>
+        </div>
+        
+        <div class="testimonial-footer">
+          <span class="date" data-translate="date_aug_2024">أغسطس 2024</span>
+          <a href="#perfume-project" class="view-project-btn" data-translate="view_project">عرض المشروع</a>
+        </div>
+      </div>
+
+      <!-- رأي 6 - مشروع براند مون لايت -->
+      <div class="testimonial-card" data-project="moonlight">
+        <div class="testimonial-header">
+          <div class="client-avatar">
+            <span>ك</span>
+          </div>
+          <div class="client-info">
+            <h3 class="client-name" data-translate="client_moonlight_name">كريم سامي</h3>
+            <p class="client-title" data-translate="client_moonlight_title">مدير التسويق</p>
+          </div>
+          <div class="project-badge">موقع براند</div>
+        </div>
+        
+        <div class="stars">★★★★★</div>
+        
+        <p class="testimonial-text" data-translate="testimonial_moonlight_text">
+          "تصميم موقع Moonlight يعكس هوية البراند بدقة مع أداء فني ممتاز. 
+          زادت زيارات الموقع بنسبة 300% وتحسن معدل التحويل بشكل ملحوظ. 
+          التصميم المتجاوب يعمل بشكل مثالي على جميع الأجهزة."
+        </p>
+        
+        <div class="testimonial-stats">
+          <div class="stat">
+            <span class="stat-value">300%</span>
+            <span class="stat-label" data-translate="stat_traffic">زيادة في الزيارات</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">35%</span>
+            <span class="stat-label" data-translate="stat_conversion">معدل التحويل</span>
+          </div>
+        </div>
+        
+        <div class="testimonial-footer">
+          <span class="date" data-translate="date_jul_2024">يوليو 2024</span>
+          <a href="#moonlight-project" class="view-project-btn" data-translate="view_project">عرض المشروع</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- إحصاءات إضافية -->
+    <div class="testimonials-stats">
+      <div class="overall-stat">
+        <div class="stat-number">50+</div>
+        <div class="stat-text" data-translate="stat_projects_completed">مشروع مكتمل</div>
+      </div>
+      <div class="overall-stat">
+        <div class="stat-number">100%</div>
+        <div class="stat-text" data-translate="stat_client_satisfaction">رضا العملاء</div>
+      </div>
+      <div class="overall-stat">
+        <div class="stat-number">4.9</div>
+        <div class="stat-text" data-translate="stat_average_rating">متوسط التقييم</div>
+      </div>
+      <div class="overall-stat">
+        <div class="stat-number">30+</div>
+        <div class="stat-text" data-translate="stat_happy_clients">عميل سعيد</div>
+      </div>
+    </div>
+  </div>
+</section>
     <section class="services" id="services" style="scroll-margin-top: 100px">
       <h2 data-translate="services_title">الخدمات</h2>
       <div class="services-container">
