@@ -30,5 +30,4 @@ It includes sections for **About Me, Projects, and Contact** with a clean respon
 ## ▶ How to Run
 1. Clone the repo:
    ```bash
-   git clone ttps://github.com/mohamed-sayed239/my-portfoilo/
-
+(https://mohamed-sayed239.github.io/my-portfoilo/)
