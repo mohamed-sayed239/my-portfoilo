@@ -1,1218 +1,261 @@
-<!DOCTYPE html>
-<html lang="en">
- <head>
-  <!-- الأساسيات -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohamed Sayed | Web Developer & Designer</title>
-  <meta name="description" content="I'm Mohamed Sayed, a web developer and graphic designer. This is my personal portfolio showcasing my projects, skills, and contact information." />
-  <meta name="keywords" content="Mohamed Sayed, portfolio, web developer, front-end, graphic designer, مشاريع, تصميم مواقع, مبرمج" />
-  <meta name="author" content="Mohamed Sayed" />
-
-  <!-- SEO + مشاركة اجتماعية -->
-  <meta property="og:title" content="Mohamed Sayed | Web Developer & Designer" />
-  <meta property="og:description" content="Discover the work and projects of Mohamed Sayed in web development and design." />
-  <meta property="og:image" content="https://your-domain.com/images/preview.jpg" /> <!-- عدل المسار حسب صورتك -->
-  <meta property="og:url" content="https://your-portfolio-link.com" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- الخطوط والأيقونات -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
-
-  <!-- ملف التنسيق -->
-  <link rel="stylesheet" type="text/css" href="main.css" />
-
-  <!-- Favicon (اختياري) -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-en="Mohamed Sayed | Software Engineer & Digital Marketer">محمد سيد | مهندس برمجيات وتسويق رقمي</title>
+  <meta name="description" content="مهندس برمجيات ومتخصص في التسويق الرقمي وبناء الحضور الرقمي للأعمال.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="main.css">
+  <script src="app.js" defer></script>
 </head>
+<body data-p="home">
 
-  <body>
-    <header>
-      <nav class="navigation">
-        <div class="logo">
-          <img src="imegas/logo.png" alt="Logo" />
+  <header id="hd" class="header"></header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="hero" id="home" aria-label="مقدمة">
+      <video class="hero__video" autoplay muted loop playsinline preload="none" aria-hidden="true">
+        <source src="assets/videohero.mp4" type="video/mp4">
+      </video>
+      
+      <!-- خلفيات متحركة فاخرة -->
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+      
+      <div class="container hero__content">
+        <h1 class="hero__title" style="--i:0" data-en="Mohamed Sayed">محمد سيد</h1>
+        <p class="hero__subtitle" style="--i:1" data-en="Software engineer and digital marketing specialist, building digital presence for businesses.">مهندس برمجيات ومتخصص في التسويق الرقمي وبناء الحضور الرقمي للأعمال.</p>
+        <p class="hero__description" style="--i:2" data-en="I combine software development and digital marketing to help companies and individuals build a strong digital presence, and to develop technical solutions that serve their business and help them reach their customers.">أجمع بين تطوير البرمجيات والتسويق الرقمي لمساعدة الشركات والأفراد على بناء حضور رقمي قوي، وتطوير حلول تقنية تخدم أعمالهم وتساعدهم على الوصول إلى عملائهم.</p>
+        
+        <div class="hero__actions" style="--i:3">
+          <a class="btn btn--primary" data-wa href="#" target="_blank" rel="noopener" data-en="Start Your Project Now">ابدأ مشروعك الآن</a>
+          <a class="btn btn--secondary" href="#portfolio" data-en="Explore My Work">استكشف أعمالي</a>
         </div>
-        <div class="main-head">
-          <div class="remove-container">
-            <i class="fa-solid fa-xmark"></i>
+        
+        <div class="hero__bridge" style="--i:4">
+          <b data-en="Software Development">تطوير البرمجيات</b>
+          <i class="hero__bridge-divider"></i>
+          <b data-en="Digital Marketing">التسويق الرقمي</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Section -->
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="container about__container">
+        <div class="about__image-wrapper">
+          <div class="about__image-placeholder">
+            <span data-en="Add your photo at assets/images/my_image.png">ضع صورتك في assets/images/my_image.png</span>
+            <img src="assets/my_image.png" alt="صورة محمد سيد" loading="lazy" class="about__image">
           </div>
-          <a href="#home" data-translate="home">Home</a>
-          <a href="#about" data-translate="about">About Me</a>
-          <a href="#skills" data-translate="skills">Skills</a>
-          <a href="#projects" data-translate="projects">Projects</a>
-          <a href="#testimonials" data-translate="testimonials">Customer</a>
-          <a href="#services" data-translate="services">Services</a>
-          <a href="#contact" data-translate="contact">Contact</a>
+          <p class="about__caption" data-en="Cairo, Egypt. Building digital solutions.">القاهرة، مصر. بناء حلول رقمية.</p>
         </div>
-        <div class="bar-lg">
-          <div class="btn-lag">
-            <div class="dropdown">
-              <button class="dropdown-btn" data-translate="current_lang">
-                English
-              </button>
-              <div class="dropdown-content">
-                <a
-                  href="#"
-                  onclick="return changeLanguage('en')"
-                  data-translate="english"
-                  >English</a
-                >
-                <a
-                  href="#"
-                  onclick="return changeLanguage('ar')"
-                  data-translate="arabic"
-                  >العربية</a
-                >
-              </div>
+        
+        <div class="about__content">
+          <h2 class="section__title" id="about-title" data-en="About me">من أنا</h2>
+          <p class="about__text" data-en="My journey in programming started self-taught in 2024, driven by a passion for building real digital solutions. I didn't stop at theory; I worked on practical projects for various clients, learning how to translate business needs into high-performance code.">بدأت رحلتي في عالم البرمجة بشكل ذاتي في 2024، مدفوعاً بشغفي لبناء حلول رقمية حقيقية. لم أكتفِ بالجانب النظري، بل عملت على مشاريع عملية لعملاء مختلفين، وتعلمت كيف أترجم احتياجات العمل إلى أكواد برمجية عالية الأداء.</p>
+          <p class="about__text" data-en="Combining programming with digital marketing means I don't just build a beautiful website; I build a strategic tool that serves your business, reaches your target audience, and helps you grow.">الجمع بين البرمجة والتسويق الرقمي يعني أنني لا أبني موقعاً جميلاً فقط، بل أبني أداة استراتيجية تخدم عملك، تصل إلى جمهورك المستهدف، وتساعدك على النمو.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Services Section -->
+    <section class="services section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 class="section__title" id="services-title" data-en="Three connected areas">ثلاثة مجالات تكمّل بعضها</h2>
+        <div class="services__grid">
+          
+          <article class="service-card" style="--c:var(--sw)">
+            <h3 class="service-card__title" data-en="Software Development">تطوير البرمجيات</h3>
+            <ul class="service-card__list">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li>
+              <li>Tailwind CSS</li><li>Bootstrap</li><li>Firebase</li><li>Git &amp; GitHub</li>
+              <li data-en="Responsive Web Development">تطوير مواقع متجاوبة</li>
+            </ul>
+          </article>
+
+          <article class="service-card" style="--c:var(--mk)">
+            <h3 class="service-card__title" data-en="Digital Marketing & Media Buying">التسويق الرقمي وشراء الإعلانات</h3>
+            <ul class="service-card__list">
+              <li data-en="Social Media Marketing">التسويق عبر السوشيال ميديا</li>
+              <li data-en="Content Creation">صناعة المحتوى</li>
+              <li data-en="Advertising Campaign Fundamentals">أساسيات الحملات الإعلانية</li>
+              <li data-en="Media Buying Fundamentals">أساسيات الميديا بايينج</li>
+            </ul>
+          </article>
+
+          <article class="service-card" style="--c:var(--tx)">
+            <h3 class="service-card__title" data-en="Digital Identity & Visual Design">الهوية الرقمية والتصميم البصري</h3>
+            <ul class="service-card__list">
+              <li data-en="UI Design">تصميم واجهات المستخدم UI</li>
+              <li data-en="UX Fundamentals">أساسيات تجربة المستخدم UX</li>
+              <li>Adobe Photoshop</li>
+              <li data-en="Visual Design">التصميم البصري</li>
+              <li data-en="Brand Identity">الهوية البصرية</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Portfolio Section -->
+    <section class="portfolio section" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <h2 class="section__title" id="portfolio-title" data-en="Selected work">أعمالي</h2>
+        <div class="portfolio__grid">
+          
+          <a class="portfolio-card" href="development.html" style="--c:var(--sw)" data-g="</>">
+            <img src="assets/images/portfolio.png" alt="تطوير البرمجيات" loading="lazy" class="portfolio-card__image">
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title" data-en="Software Development">تطوير البرمجيات</h3>
+              <p class="portfolio-card__desc" data-en="Websites, apps and digital solutions that combine performance, design and user experience.">مواقع وتطبيقات وحلول رقمية تجمع بين الأداء والتصميم وتجربة المستخدم.</p>
+              <span class="btn btn--secondary" data-en="View projects">مشاهدة المشاريع</span>
+            </div>
+          </a>
+
+          <a class="portfolio-card" href="marketing.html" style="--c:var(--mk)" data-g="@">
+            <img src="assets/images/homewear.png" alt="التسويق الرقمي" loading="lazy" class="portfolio-card__image">
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title" data-en="Digital Marketing">التسويق الرقمي</h3>
+              <p class="portfolio-card__desc" data-en="Marketing strategies and advertising content that help brands reach their audience.">استراتيجيات تسويقية ومحتوى إعلاني يساعد العلامات التجارية على الوصول إلى جمهورها.</p>
+              <span class="btn btn--secondary" data-en="View campaigns">مشاهدة الحملات</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Testimonials Marquee (Combined) -->
+    <section class="testimonials-marquee section" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 class="section__title" id="testimonials-title" data-en="What Clients Say">ماذا يقول العملاء؟</h2>
+      </div>
+      <div class="marquee-wrapper">
+        <div class="marquee" id="mq"></div>
+      </div>
+    </section>
+
+    <!-- 6. Client Journey / Process Section (Enhanced) -->
+    <section class="process section" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <h2 class="section__title" id="journey-title" data-en="Your Journey With Me">رحلة العمل معي</h2>
+        <p class="process__intro" data-en="A transparent, step-by-step process ensuring your project is delivered successfully.">عملية شفافة ومرحلية تضمن تسليم مشروعك بنجاح.</p>
+        
+        <div class="process__grid">
+          
+          <article class="process-card">
+            <div class="process-card__icon" aria-hidden="true">💡</div>
+            <div class="process-card__number">01</div>
+            <h3 class="process-card__title" data-en="Discovery & Planning">فهم الفكرة والتخطيط</h3>
+            <p class="process-card__desc" data-en="We discuss your goals, target audience, and requirements to build a solid roadmap for the project.">نناقش أهدافك، جمهورك المستهدف، ومتطلباتك لوضع خارطة طريق قوية للمشروع.</p>
+          </article>
+
+          <article class="process-card">
+            <div class="process-card__icon" aria-hidden="true">🎨</div>
+            <div class="process-card__number">02</div>
+            <h3 class="process-card__title" data-en="UI/UX Design">التصميم وتجربة المستخدم</h3>
+            <p class="process-card__desc" data-en="I create intuitive, modern, and conversion-focused designs that align with your brand identity.">أقوم بإنشاء تصاميم حديثة وبديهية تركز على تحويل الزوار إلى عملاء وتتوافق مع هويتك.</p>
+          </article>
+
+          <article class="process-card">
+            <div class="process-card__icon" aria-hidden="true">💻</div>
+            <div class="process-card__number">03</div>
+            <h3 class="process-card__title" data-en="Development">البرمجة والتطوير</h3>
+            <p class="process-card__desc" data-en="Clean, fast, and responsive code. I build your website or app to perform flawlessly on all devices.">أكواد نظيفة، سريعة، ومتجاوبة. أبني موقعك ليعمل بسلاسة على جميع الأجهزة.</p>
+          </article>
+
+          <article class="process-card">
+            <div class="process-card__icon" aria-hidden="true">🚀</div>
+            <div class="process-card__number">04</div>
+            <h3 class="process-card__title" data-en="Testing & Delivery">الاختبار والتسليم</h3>
+            <p class="process-card__desc" data-en="Rigorous testing before launch. I deliver the project, explain how it works, and offer post-launch support.">اختبار دقيق قبل الإطلاق. أسلم المشروع، أشرح لك كيفية إدارته، وأقدم دعماً فنياً بعد الإطلاق.</p>
+          </article>
+
+        </div>
+        
+        <!-- Final CTA - Encourages conversion -->
+        <div class="process__cta rv">
+          <div class="process__cta-content">
+            <span class="process__cta-badge" data-en="🎯 Ready to start?">🎯 جاهز للبدء؟</span>
+            <h3 class="process__cta-title" data-en="Let's bring your idea to life">يلا نحوّل فكرتك لواقع</h3>
+            <p class="process__cta-desc" data-en="Now that you know how we'll work together, don't wait — start your project today and get a free consultation.">دلوقتي بعد ما عرفت رحلة العمل، ما تتأخرش — ابدأ مشروعك النهاردة واحصل على استشارة مجانية.</p>
+          </div>
+          <div class="process__cta-actions">
+            <a class="btn btn--primary" data-wa href="#" target="_blank" rel="noopener" data-en="Start Your Project Now">ابدأ مشروعك الآن</a>
+            <a class="btn btn--secondary" href="#contact" data-en="Send a Message">ابعتلي رسالة</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CV Section -->
+    <section class="cv section" id="cv" aria-labelledby="cv-title">
+      <div class="container">
+        <h2 class="section__title" id="cv-title" data-en="Curriculum Vitae">السيرة الذاتية</h2>
+        <div class="cv__grid">
+          <div class="cv__col">
+            <h3 class="cv__subtitle" data-en="Professional summary">نبذة مهنية</h3>
+            <p data-en="Self-taught software engineer and digital marketing specialist. Building high-performance web solutions since 2024.">مهندس برمجيات ذاتي التعلم ومتخصص في التسويق الرقمي. أبني حلول ويب عالية الأداء منذ 2024.</p>
+            <h3 class="cv__subtitle" data-en="Focus Areas">مجالات التركيز</h3>
+            <p data-en="Web Development, UI/UX Design, Digital Marketing.">تطوير الويب، تصميم واجهات المستخدم، والتسويق الرقمي.</p>
+          </div>
+          <div class="cv__col">
+            <h3 class="cv__subtitle" data-en="Technical skills">المهارات التقنية</h3>
+            <p>HTML, CSS, JavaScript, React, Tailwind CSS, Bootstrap, Firebase, Git &amp; GitHub</p>
+            <h3 class="cv__subtitle" data-en="Languages">اللغات</h3>
+            <p data-en="Arabic, English">العربية، English</p>
+            <div class="cv__actions">
+              <a class="btn btn--primary" href="assets/MOHAMED_SAYED-CV (1).pdf" download data-en="Download CV">تحميل السيرة الذاتية</a>
+              <a class="btn btn--secondary" href="assets/MOHAMED_SAYED-CV (1).pdf" target="_blank" rel="noopener" data-en="View CV">عرض السيرة الذاتية</a>
             </div>
           </div>
-          <a class="menu-toggle"><i class="fa-solid fa-bars"></i></a>
-        </div>
-      </nav>
-    </header>
-    <section class="home" id="home">
-      <div class="overlay"></div>
-      <div class="floating-icons">
-        <span class="icon icon-orange">&lt;/&gt;</span>
-        <span class="icon icon-blue">{ }</span>
-        <span class="icon icon-orange">function()</span>
-        <span class="icon icon-glow">&lt;a&gt;</span>
-        <span class="icon icon-blue">const</span>
-        <span class="icon icon-orange">return</span>
-        <span class="icon icon-glow">.map()</span>
-        <span class="icon icon-orange">if ()</span>
-        <span class="icon icon-blue">[ ]</span>
-        <span class="icon icon-glow">==></span>
-      </div>
-      <div class="left-side-home">
-        <h2>
-          <span
-            data-translate="home_title"
-            style="
-              font-size: 30px;
-              font-weight: 300;
-              color: #ffffff;
-              line-height: 2;
-              letter-spacing: 3px;
-              text-transform: uppercase;
-            "
-            >Hi I'M, Mohamed sayed!</span
-          >
-          <br />
-          <span
-            data-translate="home_subtitle"
-            style="
-              font-size: 70px;
-              font-weight: 500;
-              color: #ff8a00;
-              line-height: 1;
-              letter-spacing: 3px;
-              text-transform: uppercase;
-            "
-            >web Developer</span
-          >
-        </h2>
-        <p data-translate="home_description">
-          Skilled in building responsive and interactive websites using HTML,
-          CSS, and JavaScript. Experienced with version control using Git and
-          GitHub. Passionate about crafting clean user interfaces and enhancing
-          user experience.
-        </p>
-        <div class="btns-home">
-          <a
-            href="https://drive.google.com/file/d/1F37A88TMRjGx9JLe6QNis2dRjKwN0FPA/view?usp=drive_link"
-          >
-            <button class="btn-cv" type="button">
-              <span class="btn-cv__text" data-translate="download_btn"
-                >View My Cv</span
-              >
-              <span class="btn-cv__icon"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 35 35"
-                  id="bdd05811-e15d-428c-bb53-8661459f9307"
-                  data-name="Layer 2"
-                  class="svg"
-                >
-                  <path
-                    d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"
-                  ></path>
-                  <path
-                    d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"
-                  ></path>
-                  <path
-                    d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"
-                  ></path></svg
-              ></span>
-            </button>
-          </a>
-          <a href="#projects">
-            <button class="btn-projects">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="arr-2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                ></path>
-              </svg>
-              <span class="text" data-translate="view_projects_btn"
-                >View My Project</span
-              >
-              <span class="circle"></span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="arr-1"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                ></path>
-              </svg>
-            </button>
-          </a>
-        </div>
-      </div>
-      <div class="right-side-home">
-        <video autoplay muted loop playsinline class="my-video">
-          <source src="imegas/home.mp4" type="video/mp4" />
-          <span data-translate="video_not_supported"
-            >Your browser does not support the video tag.</span
-          >
-        </video>
-      </div>
-    </section>
-    <section class="about" id="about" style="scroll-margin-top: 100px">
-      <div class="left-about">
-        <h2 class="about-title" data-translate="about_title">About Me</h2>
-
-        <div class="about-text">
-          <p
-            class="about-line"
-            style="--delay: 0s"
-            data-translate="about_text1"
-          >
-            Hello! I'm <strong>Mohamed</strong>, a
-            <strong>Front-End Developer</strong> with a passion for clean code,
-            modern design, and building interactive user interfaces.
-          </p>
-          <p
-            class="about-line"
-            style="--delay: 2s"
-            data-translate="about_text2"
-          >
-            I specialize in <strong>HTML</strong>, <strong>CSS</strong>, and
-            <strong>JavaScript</strong>, and I'm proficient with frameworks like
-            <strong>React</strong> and <strong>Tailwind CSS</strong>.
-          </p>
-          <p
-            class="about-line"
-            style="--delay: 4s"
-            data-translate="about_text3"
-          >
-            My toolkit includes <strong>Git & GitHub</strong> for version
-            control, and I focus heavily on <strong>Responsive Design</strong>.
-          </p>
-          <p
-            class="about-line"
-            style="--delay: 6s"
-            data-translate="about_text4"
-          >
-            I'm also keen on <strong>UI/UX Design</strong>, and with my
-            <strong>English (B2)</strong> level, I collaborate smoothly with
-            global teams.
-          </p>
-          <p
-            class="about-line"
-            style="--delay: 8s"
-            data-translate="about_text5"
-          >
-            Since starting in <strong>2024</strong>, I've developed e-commerce
-            platforms, dashboards, and business websites — and I'm always ready
-            for the next challenge.
-          </p>
-        </div>
-      </div>
-
-      <div class="right-about">
-        <video autoplay muted loop playsinline class="my-video">
-          <source src="imegas/about.mp4" type="video/mp4" />
-          <span data-translate="video_not_supported"
-            >Your browser does not support the video tag.</span
-          >
-        </video>
-      </div>
-    </section>
-    <section class="skills" id="skills" style="scroll-margin-top: 700px">
-      <svg
-        class="background-svg"
-        viewBox="0 0 1440 320"
-        preserveAspectRatio="none"
-      >
-        <path
-          class="wave wave-back"
-          fill="#ff7f00"
-          fill-opacity="0.06"
-          d="M0,160 C360,200 1080,120 1440,160 L1440,320 L0,320 Z"
-        ></path>
-        <path
-          class="wave wave-front"
-          fill="#ff7f00"
-          fill-opacity="0.12"
-          d="M0,200 C240,140 720,260 960,200 L1440,320 L0,320 Z"
-        ></path>
-      </svg>
-
-      <h2 data-translate="skills_title">My Skills</h2>
-
-      <!-- Tabs -->
-      <div class="skill-tabs">
-        <button
-          class="tab active"
-          data-filter="all"
-          data-translate="all_skills"
-        >
-          All
-        </button>
-        <button class="tab" data-filter="frontend" data-translate="frontend">
-          Frontend
-        </button>
-        <button class="tab" data-filter="tools" data-translate="tools">
-          Tools
-        </button>
-        <button class="tab" data-filter="design" data-translate="design">
-          Design
-        </button>
-        <button class="tab" data-filter="language" data-translate="language">
-          Languages
-        </button>
-      </div>
-
-      <div class="skills-container">
-        <!-- HTML -->
-        <div class="skill frontend" style="--color: #e44d26; --percent: 95%">
-          <div class="icon-wrapper">
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-              alt="HTML"
-            />
-          </div>
-          <span data-translate="html_skill">HTML</span>
-          <div class="percent">95%</div>
-        </div>
-
-        <!-- CSS -->
-        <div class="skill frontend" style="--color: #264de4; --percent: 90%">
-          <div class="icon-wrapper">
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
-              alt="CSS"
-            />
-          </div>
-          <span data-translate="css_skill">CSS</span>
-          <div class="percent">90%</div>
-        </div>
-
-        <!-- JavaScript -->
-        <div class="skill frontend" style="--color: #f0db4f; --percent: 80%">
-          <div class="icon-wrapper">
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-              alt="JS"
-            />
-          </div>
-          <span data-translate="js_skill">JavaScript</span>
-          <div class="percent">80%</div>
-        </div>
-
-        <!-- React -->
-        <div class="skill frontend" style="--color: #61dafb; --percent: 70%">
-          <div class="icon-wrapper">
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
-              alt="React"
-            />
-          </div>
-          <span data-translate="react_skill">React</span>
-          <div class="percent">70%</div>
-        </div>
-
-        <!-- Git & GitHub -->
-        <div class="skill tools" style="--color: #f1502f; --percent: 85%">
-          <div class="icon-wrapper">
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
-              alt="Git"
-            />
-          </div>
-          <span data-translate="git_skill">Git & GitHub</span>
-          <div class="percent">85%</div>
-        </div>
-
-        <!-- Tailwind CSS -->
-        <div class="skill frontend" style="--color: #38bdf8; --percent: 90%">
-          <div class="icon-wrapper">
-            <img
-              src="https://www.svgrepo.com/show/374118/tailwind.svg"
-              alt="Tailwind"
-            />
-          </div>
-          <span data-translate="tailwind_skill">Tailwind CSS</span>
-          <div class="percent">90%</div>
-        </div>
-
-        <!-- Responsive Design -->
-        <div class="skill frontend" style="--color: #00c896; --percent: 100%">
-          <div class="icon-wrapper">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1149/1149168.png"
-              alt="Responsive"
-            />
-          </div>
-          <span data-translate="responsive_skill">Responsive Design</span>
-          <div class="percent">100%</div>
-        </div>
-
-        <!-- UI/UX Design -->
-        <div class="skill design" style="--color: #a259ff; --percent: 65%">
-          <div class="icon-wrapper">
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg"
-              alt="UI/UX"
-            />
-          </div>
-          <span data-translate="uiux_skill">UI / UX</span>
-          <div class="percent">65%</div>
-        </div>
-
-        <!-- English -->
-        <div class="skill language" style="--color: #007acc; --percent: 70%">
-          <div class="progress-border"></div>
-          <div class="icon-wrapper">
-            <img
-              src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/english-speaking-icon.png"
-              alt="EN"
-            />
-          </div>
-          <span data-translate="english_skill">English (B2)</span>
-          <div class="percent">70%</div>
-        </div>
-
-        <!-- Adobe Photoshop -->
-        <div class="skill design" style="--color: #31a8ff; --percent: 80%">
-          <div class="icon-wrapper">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png"
-              alt="Photoshop"
-            />
-          </div>
-          <span data-translate="photoshop_skill">Adobe Photoshop</span>
-          <div class="percent">80%</div>
         </div>
       </div>
     </section>
-  <section class="projects" id="projects" style="scroll-margin-top: 700px">
-    <!-- تأثير الثلج المتساقط -->
-<div class="snowfall" id="snowfall"></div>
-<div class="wind-effect"></div>
-<div class="snow-accumulation"></div>
 
-  <div class="stars-bg"></div>
-  <h2 data-translate="projects_title">My Projects</h2>
-  <div class="projects-container">
-    
-    <!-- مشروع 1: Homeware Products -->
-    <div class="project-card">
-      <img src="imegas/homewear.png" alt="Homeware Products" />
-      <div class="project-content">
-        <h3 class="project-title" data-translate="project1_title">Homeware Products</h3>
-        <p class="project-description" data-translate="project1_desc">A website showcasing homeware products.</p>
-        <div class="project-technologies">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
-          <span class="tech-tag">Django</span>
-        </div>
-        <a href="https://riqahhomewear.shop" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-      </div>
-    </div>
-
-    <!-- مشروع 2: Courses Platform -->
-    <div class="project-card">
-      <img src="imegas/courses_moon light.jpg" alt="Courses Platform Project" />
-      <div class="project-content">
-        <h3 class="project-title" data-translate="project_courses_title">Courses Platform</h3>
-        <p class="project-description" data-translate="project_courses_desc">A modern and responsive platform for online courses, offering a wide range of learning materials and tutorials.</p>
-        <div class="project-technologies">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
-        </div>
-        <a href="https://mohamed-sayed239.github.io/moon_light/courses/main.html" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-      </div>
-    </div>
-
-    <!-- مشروع 3: Codexite -->
-    <div class="project-card">
-      <img src="imegas/codexisit.jpg" alt="Codexite Project" />
-      <div class="project-content">
-        <h3 class="project-title" data-translate="project_codexite_title">Codexite</h3>
-        <p class="project-description" data-translate="project_codexite_desc">A modern and responsive website for a software startup offering web development services.</p>
-        <div class="project-technologies">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
-        </div>
-        <a href="https://mohamed-sayed239.github.io/codexite/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-      </div>
-    </div>
-
-    <!-- مشروع 4: Fitness & Nutrition Planner -->
-    <div class="project-card">
-      <img src="imegas/fitzone.png" alt="Fitness & Nutrition App" />
-      <div class="project-content">
-        <h3 class="project-title" data-translate="project_fitness_title">Fitness & Nutrition Planner</h3>
-        <p class="project-description" data-translate="project_fitness_desc">A web app that helps users create personalized workout and nutrition plans to achieve their fitness goals.</p>
-        <div class="project-technologies">
-          <span class="tech-tag">React</span>
-          <span class="tech-tag">Tailwind CSS</span>
-        </div>
-        <a href="https://mohamed-sayed239.github.io/fitness-nutrition/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-      </div>
-    </div>
-
-    <!-- مشروع 5: Fun Game -->
-    <div class="project-card">
-      <img src="imegas/game.jpg" alt="Fun Game" />
-      <div class="project-content">
-        <h3 class="project-title" data-translate="project_game_title">Fun Game</h3>
-        <p class="project-description" data-translate="project_game_desc">An interactive and entertaining game built with HTML, CSS, and JavaScript for all ages.</p>
-        <div class="project-technologies">
-          <span class="tech-tag">React</span>
-          <span class="tech-tag">Tailwind CSS</span>
-        </div>
-        <a href="https://mohamed-sayed239.github.io/lumiquest-game/#/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-      </div>
-    </div>
-
-    <!-- مشروع 6: Perfume Store -->
-    <div class="project-card">
-      <img src="imegas/perfiom.jpg" alt="Perfume Store" />
-      <div class="project-content">
-        <h3 class="project-title" data-translate="project2_title">Perfume Store</h3>
-        <p class="project-description" data-translate="project2_desc">An e-commerce store for selling perfumes online.</p>
-        <div class="project-technologies">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
-        </div>
-        <a href="https://mohamed-sayed239.github.io/Perfume-Store/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-      </div>
-    </div>
-
-    <!-- مشروع 7: Moonlight Brand -->
-    <div class="project-card">
-      <img src="imegas/moonlight.png" alt="Moonlight Brand Website" />
-      <div class="project-content">
-        <h3 class="project-title" data-translate="project3_title">Moonlight Brand</h3>
-        <p class="project-description" data-translate="project3_desc">A stylish landing page for a fashion or lifestyle brand, featuring elegant product displays and smooth user experience.</p>
-        <div class="project-technologies">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
-        </div>
-        <a href="https://mohamed-sayed239.github.io/moonlight/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-      </div>
-    </div>
-
-    <!-- مشروع 8: Law Firm Website -->
-    <div class="project-card">
-      <img src="imegas/office.png" alt="Law Firm Website" />
-      <div class="project-content">
-        <h3 class="project-title" data-translate="project4_title">Law Firm Website</h3>
-        <p class="project-description" data-translate="project4_desc">An informational website for a law firm.</p>
-        <div class="project-technologies">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
-          <span class="tech-tag">Django</span>
-        </div>
-        <a href="https://example.com/lawfirm" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-      </div>
-    </div>
-
-    <!-- مشروع 9: Personal Portfolio -->
-    <div class="project-card">
-      <img src="imegas/portfolio.png" alt="Personal Portfolio Website" />
-      <div class="project-content">
-        <h3 class="project-title" data-translate="project5_title">Personal Portfolio</h3>
-        <p class="project-description" data-translate="project5_desc">A personal website showcasing my web development and design projects, skills, and contact information.</p>
-        <div class="project-technologies">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
-        </div>
-        <a href="https://mohamed-sayed239.github.io/my-portfoilo/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-      </div>
-    </div>
-
-    <!-- مشروع 10: Coffee Shop Website -->
-    <div class="project-card">
-      <img src="imegas/coffee.png" alt="Coffee Shop Website" />
-      <div class="project-content">
-        <h3 class="project-title" data-translate="project6_title">Coffee Shop Website</h3>
-        <p class="project-description" data-translate="project6_desc">A modern and responsive website for a coffee shop, featuring menus, about section, products, and customer reviews.</p>
-        <div class="project-technologies">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
-        </div>
-        <a href="https://mohamed-sayed239.github.io/coffee/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-      </div>
-    </div>
-
-    <!-- مشروع 11: Calculator App -->
-    <div class="project-card">
-      <img src="imegas/callculater.jpg" alt="Calculator App" />
-      <div class="project-content">
-        <h3 class="project-title" data-translate="project7_title">Calculator App</h3>
-        <p class="project-description" data-translate="project7_desc">A simple and user-friendly calculator application.</p>
-        <div class="project-technologies">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
-        </div>
-        <a href="https://mohamed-sayed239.github.io/calculator/" target="_blank" class="project-btn" data-translate="view_project">View Project</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-   <section class="testimonials" id="testimonials" style="scroll-margin-top: 200px">
-  <div class="testimonials-bg"></div>
-  <div class="testimonials-header">
-    <h2 data-translate="testimonials_title">آراء العملاء</h2>
-    <p class="subtitle" data-translate="testimonials_subtitle">تجارب حقيقية من مشاريع ناجحة</p>
-  </div>
-  
-  <div class="testimonials-container">
-    <!-- فلترة حسب المشروع -->
-    <div class="projects-filter">
-      <button class="filter-btn active" data-project="all" data-translate="filter_all">جميع المشاريع</button>
-      <button class="filter-btn" data-project="homeware" data-translate="filter_homeware">المنتجات المنزلية</button>
-      <button class="filter-btn" data-project="courses" data-translate="filter_courses">منصة الكورسات</button>
-      <button class="filter-btn" data-project="codexite" data-translate="filter_codexite">كوديكسايت</button>
-      <button class="filter-btn" data-project="fitness" data-translate="filter_fitness">التمارين والتغذية</button>
-      <button class="filter-btn" data-project="perfume" data-translate="filter_perfume">متجر العطور</button>
-      <button class="filter-btn" data-project="moonlight" data-translate="filter_moonlight">براند مون لايت</button>
-    </div>
-
-    <div class="testimonials-grid">
-      <!-- رأي 1 - مشروع المنتجات المنزلية -->
-      <div class="testimonial-card" data-project="homeware">
-        <div class="testimonial-header">
-          <div class="client-avatar">
-            <span>ي</span>
-          </div>
-          <div class="client-info">
-            <h3 class="client-name" data-translate="client_homeware_name">ياسين جرانه</h3>
-            <p class="client-title" data-translate="client_homeware_title">صاحب متجر Riqah Homewear</p>
-          </div>
-          <div class="project-badge">منتجات منزلية</div>
-        </div>
-        
-        <div class="stars">★★★★★</div>
-        
-        <p class="testimonial-text" data-translate="testimonial_homeware_text">
-          "محمد سيد قام بتطوير موقع متجرنا بالكامل بلغة Django مع واجهة تفاعلية رائعة. 
-          الموقع ساعدنا في زيادة المبيعات بنسبة 40% خلال أول شهرين. 
-          الالتزام بالمواعيد والاهتمام بالتفاصيل كان مميزًا جدًا."
-        </p>
-        
-        <div class="testimonial-stats">
-          <div class="stat">
-            <span class="stat-value">40%</span>
-            <span class="stat-label" data-translate="stat_sales">زيادة في المبيعات</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">15 يوم</span>
-            <span class="stat-label" data-translate="stat_delivery">تسليم المشروع</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">4.9</span>
-            <span class="stat-label" data-translate="stat_rating">التقييم العام</span>
+    <!-- 8. Contact Section -->
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__container">
+        <div class="contact__info">
+          <h2 class="section__title" id="contact-title" data-en="Let’s talk about your project">خلّينا نتكلم عن مشروعك</h2>
+          <p class="contact__desc" data-en="Send me the details and we’ll continue the conversation on WhatsApp.">ابعت تفاصيل مشروعك وهنكمل الكلام على واتساب.</p>
+          <div class="contact__actions">
+            <a class="btn btn--primary" data-wa href="#" target="_blank" rel="noopener" data-en="Start your project">ابدأ مشروعك</a>
           </div>
         </div>
         
-        <div class="testimonial-footer">
-          <span class="date" data-translate="date_dec_2024">ديسمبر 2024</span>
-          <a href="#homeware-project" class="view-project-btn" data-translate="view_project">عرض المشروع</a>
-        </div>
-      </div>
-
-      <!-- رأي 2 - مشروع منصة الكورسات -->
-      <div class="testimonial-card" data-project="courses">
-        <div class="testimonial-header">
-          <div class="client-avatar">
-            <span>ه</span>
+        <form id="cf" class="contact__form" novalidate>
+          <div class="form-group">
+            <label for="name"><span data-en="Name">الاسم</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
           </div>
-          <div class="client-info">
-            <h3 class="client-name" data-translate="client_courses_name">هالة محمد</h3>
-            <p class="client-title" data-translate="client_courses_title">مديرة منصة Moon Light Courses</p>
+          <div class="form-group">
+            <label for="email"><span data-en="Email">البريد الإلكتروني</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
           </div>
-          <div class="project-badge">منصة تعليمية</div>
-        </div>
-        
-        <div class="stars">★★★★★</div>
-        
-        <p class="testimonial-text" data-translate="testimonial_courses_text">
-          "المشروع تم تنفيذه باستخدام HTML, CSS, JavaScript مع تصميم متجاوب رائع. 
-          المنصة الآن تستقبل أكثر من 1000 طالب شهريًا. التصميم سهل الاستخدام وسلس، 
-          والطلاب دائمًا يمدحون تجربة المستخدم الممتازة."
-        </p>
-        
-        <div class="testimonial-stats">
-          <div class="stat">
-            <span class="stat-value">1000+</span>
-            <span class="stat-label" data-translate="stat_students">طالب شهريًا</span>
+          <div class="form-group">
+            <label for="subject"><span data-en="Subject">الموضوع</span></label>
+            <input type="text" id="subject" name="subject" required>
           </div>
-          <div class="stat">
-            <span class="stat-value">95%</span>
-            <span class="stat-label" data-translate="stat_satisfaction">رضا العملاء</span>
+          <div class="form-group">
+            <label for="message"><span data-en="Message">الرسالة</span></label>
+            <textarea id="message" name="message" rows="4" required></textarea>
           </div>
-        </div>
-        
-        <div class="testimonial-footer">
-          <span class="date" data-translate="date_nov_2024">نوفمبر 2024</span>
-          <a href="#courses-project" class="view-project-btn" data-translate="view_project">عرض المشروع</a>
-        </div>
-      </div>
-
-      <!-- رأي 3 - مشروع كوديكسايت -->
-      <div class="testimonial-card" data-project="codexite">
-        <div class="testimonial-header">
-          <div class="client-avatar">
-            <span>أ</span>
-          </div>
-          <div class="client-info">
-            <h3 class="client-name" data-translate="client_codexite_name">أحمد خالد</h3>
-            <p class="client-title" data-translate="client_codexite_title">المؤسس والرئيس التنفيذي</p>
-          </div>
-          <div class="project-badge">شركة برمجيات</div>
-        </div>
-        
-        <div class="stars">★★★★★</div>
-        
-        <p class="testimonial-text" data-translate="testimonial_codexite_text">
-          "موقع Codexite كان تحديًا كبيرًا تم تنفيذه بكفاءة عالية باستخدام تقنيات متقدمة. 
-          الموقع ساعدنا في الحصول على 50 عميل جديد خلال الربع الأول. 
-          السرعة والأداء المتميزان كانا من أهم نقاط القوة في المشروع."
-        </p>
-        
-        <div class="testimonial-stats">
-          <div class="stat">
-            <span class="stat-value">50+</span>
-            <span class="stat-label" data-translate="stat_clients">عميل جديد</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">2.3 ثانية</span>
-            <span class="stat-label" data-translate="stat_load_time">وقت التحميل</span>
-          </div>
-        </div>
-        
-        <div class="testimonial-footer">
-          <span class="date" data-translate="date_oct_2024">أكتوبر 2024</span>
-          <a href="#codexite-project" class="view-project-btn" data-translate="view_project">عرض المشروع</a>
-        </div>
-      </div>
-
-      <!-- رأي 4 - مشروع التمارين والتغذية -->
-      <div class="testimonial-card" data-project="fitness">
-        <div class="testimonial-header">
-          <div class="client-avatar">
-            <span>م</span>
-          </div>
-          <div class="client-info">
-            <h3 class="client-name" data-translate="client_fitness_name">محمود علي</h3>
-            <p class="client-title" data-translate="client_fitness_title">مدرب لياقة بدنية</p>
-          </div>
-          <div class="project-badge">تطبيق رياضي</div>
-        </div>
-        
-        <div class="stars">★★★★★</div>
-        
-        <p class="testimonial-text" data-translate="testimonial_fitness_text">
-          "التطبيق تم بناؤه باستخدام React و Tailwind CSS وهو يوفر تجربة مستخدم فريدة. 
-          أكثر من 5000 مستخدم مسجل يستفيدون من خطط التمارين والتغذية المخصصة. 
-          الأداء سريع والواجهة بديهية وسهلة الاستخدام."
-        </p>
-        
-        <div class="testimonial-stats">
-          <div class="stat">
-            <span class="stat-value">5000+</span>
-            <span class="stat-label" data-translate="stat_users">مستخدم نشط</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">4.8</span>
-            <span class="stat-label" data-translate="stat_app_rating">تقييم التطبيق</span>
-          </div>
-        </div>
-        
-        <div class="testimonial-footer">
-          <span class="date" data-translate="date_sep_2024">سبتمبر 2024</span>
-          <a href="#fitness-project" class="view-project-btn" data-translate="view_project">عرض المشروع</a>
-        </div>
-      </div>
-
-      <!-- رأي 5 - مشروع متجر العطور -->
-      <div class="testimonial-card" data-project="perfume">
-        <div class="testimonial-header">
-          <div class="client-avatar">
-            <span>س</span>
-          </div>
-          <div class="client-info">
-            <h3 class="client-name" data-translate="client_perfume_name">سارة أحمد</h3>
-            <p class="client-title" data-translate="client_perfume_title">مالكة متجر العطور</p>
-          </div>
-          <div class="project-badge">متجر إلكتروني</div>
-        </div>
-        
-        <div class="stars">★★★★★</div>
-        
-        <p class="testimonial-text" data-translate="testimonial_perfume_text">
-          "التصميم العصري والوظائف المتقدمة لمتجر العطور ساعدت في مضاعفة المبيعات. 
-          نظام الدفع سهل وآمن، وإدارة المنتجات بسيطة وفعالة. 
-          العملاء يحبون التصميم الأنيق وسهولة التصفح."
-        </p>
-        
-        <div class="testimonial-stats">
-          <div class="stat">
-            <span class="stat-value">3x</span>
-            <span class="stat-label" data-translate="stat_growth">نمو المبيعات</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">98%</span>
-            <span class="stat-label" data-translate="stat_positive_feedback">تقييم إيجابي</span>
-          </div>
-        </div>
-        
-        <div class="testimonial-footer">
-          <span class="date" data-translate="date_aug_2024">أغسطس 2024</span>
-          <a href="#perfume-project" class="view-project-btn" data-translate="view_project">عرض المشروع</a>
-        </div>
-      </div>
-
-      <!-- رأي 6 - مشروع براند مون لايت -->
-      <div class="testimonial-card" data-project="moonlight">
-        <div class="testimonial-header">
-          <div class="client-avatar">
-            <span>ك</span>
-          </div>
-          <div class="client-info">
-            <h3 class="client-name" data-translate="client_moonlight_name">كريم سامي</h3>
-            <p class="client-title" data-translate="client_moonlight_title">مدير التسويق</p>
-          </div>
-          <div class="project-badge">موقع براند</div>
-        </div>
-        
-        <div class="stars">★★★★★</div>
-        
-        <p class="testimonial-text" data-translate="testimonial_moonlight_text">
-          "تصميم موقع Moonlight يعكس هوية البراند بدقة مع أداء فني ممتاز. 
-          زادت زيارات الموقع بنسبة 300% وتحسن معدل التحويل بشكل ملحوظ. 
-          التصميم المتجاوب يعمل بشكل مثالي على جميع الأجهزة."
-        </p>
-        
-        <div class="testimonial-stats">
-          <div class="stat">
-            <span class="stat-value">300%</span>
-            <span class="stat-label" data-translate="stat_traffic">زيادة في الزيارات</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">35%</span>
-            <span class="stat-label" data-translate="stat_conversion">معدل التحويل</span>
-          </div>
-        </div>
-        
-        <div class="testimonial-footer">
-          <span class="date" data-translate="date_jul_2024">يوليو 2024</span>
-          <a href="#moonlight-project" class="view-project-btn" data-translate="view_project">عرض المشروع</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- إحصاءات إضافية -->
-    <div class="testimonials-stats">
-      <div class="overall-stat">
-        <div class="stat-number">50+</div>
-        <div class="stat-text" data-translate="stat_projects_completed">مشروع مكتمل</div>
-      </div>
-      <div class="overall-stat">
-        <div class="stat-number">100%</div>
-        <div class="stat-text" data-translate="stat_client_satisfaction">رضا العملاء</div>
-      </div>
-      <div class="overall-stat">
-        <div class="stat-number">4.9</div>
-        <div class="stat-text" data-translate="stat_average_rating">متوسط التقييم</div>
-      </div>
-      <div class="overall-stat">
-        <div class="stat-number">30+</div>
-        <div class="stat-text" data-translate="stat_happy_clients">عميل سعيد</div>
-      </div>
-    </div>
-  </div>
-</section>
-    <section class="services" id="services" style="scroll-margin-top: 100px">
-      <h2 data-translate="services_title">الخدمات</h2>
-      <div class="services-container">
-        <div class="service-card">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2721/2721295.png"
-            alt="UI Design"
-          />
-          <h3 class="service-title" data-translate="service1_title">
-            تصميم واجهات المواقع
-          </h3>
-          <p class="service-description" data-translate="service1_desc">
-            تصميم واجهات عصرية، متجاوبة وسلسة لتحسين تجربة المستخدم وتحقيق هوية
-            بصرية جذابة.
-          </p>
-        </div>
-
-        <div class="service-card">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/906/906324.png"
-            alt="Web Development"
-          />
-          <h3 class="service-title" data-translate="service2_title">
-            برمجة وتطوير المواقع
-          </h3>
-          <p class="service-description" data-translate="service2_desc">
-            برمجة مواقع ديناميكية قوية باستخدام أحدث التقنيات مثل HTML, CSS, JS,
-            Django.
-          </p>
-        </div>
-
-        <div class="service-card">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-            alt="Branding"
-          />
-          <h3 class="service-title" data-translate="service3_title">
-            تصميم الشعارات والهويات
-          </h3>
-          <p class="service-description" data-translate="service3_desc">
-            إنشاء شعارات احترافية وهوية بصرية متكاملة تناسب نشاطك وتعزز ثقة
-            العملاء بك.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="qastion" id="qastion" style="scroll-margin-top: 100px">
-      <div class="faq">
-        <h2 data-translate="faq_title">Frequently Asked Questions</h2>
-        <input
-          type="text"
-          class="faq-search"
-          placeholder="Search questions..."
-          data-translate="faq_placeholder"
-        />
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span data-translate="faq1_q"
-              >How long does it take to complete a project?</span
-            >
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-translate="faq1_a">
-              Typically, projects take between 2 to 6 weeks depending on
-              complexity and requirements.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span data-translate="faq2_q"
-              >Do you offer post-launch support?</span
-            >
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-translate="faq2_a">
-              Yes, I provide maintenance and support packages after project
-              delivery.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span data-translate="faq3_q"
-              >What technologies do you specialize in?</span
-            >
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-translate="faq3_a">
-              I specialize in HTML, CSS, JavaScript, React, Python, and UI/UX
-              design.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span data-translate="faq4_q"
-              >Can I request changes after delivery?</span
-            >
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-translate="faq4_a">
-              Yes, minor revisions are included. Major changes require
-              additional discussion.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span data-translate="faq5_q">What is your payment process?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-translate="faq5_a">
-              50% upfront deposit, 50% upon completion. Flexible terms
-              available.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span data-translate="faq6_q"
-              >Can you redesign existing websites?</span
-            >
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-translate="faq6_a">
-              Yes, I can modernize and improve your current website's design and
-              performance.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span data-translate="faq7_q"
-              >Will my website be mobile-friendly?</span
-            >
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-translate="faq7_a">
-              Absolutely. All websites I build are fully responsive for all
-              devices.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span data-translate="faq8_q"
-              >Can you integrate contact forms?</span
-            >
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-translate="faq8_a">
-              Yes, I can add forms with email notifications and validation.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span data-translate="faq9_q">Do you work internationally?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-translate="faq9_a">
-              Yes, I work with clients worldwide via Zoom, email, or other
-              platforms.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span data-translate="faq10_q">Do you provide SEO services?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-translate="faq10_a">
-              Basic SEO is included. For advanced strategies, I can refer
-              specialists.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span data-translate="faq11_q">How do we communicate?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-translate="faq11_a">
-              Email, WhatsApp, Zoom, or any platform you prefer with regular
-              updates.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span data-translate="faq12_q">Can you help with hosting?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-translate="faq12_a">
-              Yes, I can guide you through hosting options and domain setup.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      class="contact-section"
-      id="contact"
-      style="scroll-margin-top: 100px"
-    >
-      <!-- Star Background Elements (remain unchanged) -->
-      <div class="section-banner">
-        <!-- All star elements from original code -->
-      </div>
-
-      <div class="section-banner-sun">
-        <!-- All sun elements from original code -->
-      </div>
-
-      <!-- Space Background Elements -->
-      <div class="cosmic-background">
-        <div class="cosmic-planet"></div>
-        <div class="cosmic-star cosmic-star-1"></div>
-        <div class="cosmic-star cosmic-star-2"></div>
-        <div class="cosmic-star cosmic-star-3"></div>
-        <div class="cosmic-star cosmic-star-4"></div>
-        <div class="cosmic-star cosmic-star-5"></div>
-        <div class="cosmic-asteroid cosmic-asteroid-1"></div>
-        <div class="cosmic-asteroid cosmic-asteroid-2"></div>
-        <div class="cosmic-asteroid cosmic-asteroid-3"></div>
-        <div class="cosmic-satellite">📡</div>
-      </div>
-
-      <!-- Bilingual Messages -->
-      <div class="cosmic-message message-1" data-translate="cosmic_msg1">
-        رسالة ١ 🚀
-      </div>
-      <div class="cosmic-message message-2" data-translate="cosmic_msg2">
-        رسالة ٢ 🌟
-      </div>
-      <div class="cosmic-message message-3" data-translate="cosmic_msg3">
-        رسالة ٣ 🪐
-      </div>
-      <div class="cosmic-message message-4" data-translate="cosmic_msg4">
-        رسالة ٤ 🌌
-      </div>
-      <div class="cosmic-message message-5" data-translate="cosmic_msg5">
-        رسالة ٥ ☄️
-      </div>
-      <div class="cosmic-message message-6" data-translate="cosmic_msg6">
-        رسالة ٦ 💫
-      </div>
-
-      <!-- Contact Form -->
-      <div class="contact-container">
-        <h2 class="contact-title" data-translate="contact_title">Contact Me</h2>
-        <form class="contact-form" id="contactForm">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            class="form-input"
-            data-translate="name_placeholder"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            class="form-input"
-            data-translate="email_placeholder"
-          />
-          <textarea
-            name="message"
-            rows="5"
-            placeholder="Your Message"
-            required
-            class="form-textarea"
-            data-translate="message_placeholder"
-          ></textarea>
-          <button type="submit" class="submit-btn cosmic-btn">
-            <span data-translate="send_btn">Send Message</span>
-            <div class="btn-rocket">🚀</div>
-          </button>
+          <button class="btn btn--primary btn--block" type="submit" data-en="Continue on WhatsApp">أكمل على واتساب</button>
+          <p id="fm" class="form-message" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
+  </main>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-about">
-          <img src="imegas/logo.png" alt="logo" />
-          <p>Web Developer &amp; UI/UX Designer</p>
-        </div>
+  <footer id="ft" class="footer"></footer>
 
-        <div class="footer-contact">
-          <h4>Contact Me</h4>
-          <address>
-            <p>
-              Email:
-              <a href="mailto:mohamedsyid94@gmail.com"
-                >mohamedsyid94@gmail.com</a
-              >
-            </p>
-            <p>Phone: <a href="tel:+201003073577">+20 100 307 3577</a></p>
-          </address>
-
-          <div class="socials">
-            <a href="https://facebook.com/yourusername" aria-label="Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="https://linkedin.com/in/yourusername"
-              aria-label="LinkedIn"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2025 Mohamed Sayed. All rights reserved.</p>
-      </div>
-    </footer>
-    <script src="translations.js"></script>
-    <script src="app.js"></script>
-  </body>
+</body>
 </html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-en="Digital Marketing | Mohamed Sayed">التسويق الرقمي | محمد سيد</title>
+  <meta name="description" content="استراتيجيات تسويقية ومحتوى إعلاني يساعد العلامات التجارية على الوصول إلى جمهورها.">
+  
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="main.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-p="mkt" style="--c:var(--mk)">
+
+  <!-- Header (To be populated by JS) -->
+  <header id="hd" class="header"></header>
+
+  <main class="page-content">
+    
+    <!-- 1. Page Header / Intro -->
+    <section class="page-header section">
+      <div class="container">
+        <a class="back-link" href="index.html">
+          <span class="back-link__icon">&rarr;</span> 
+          <span data-en="Back to home">العودة للرئيسية</span>
+        </a>
+        <h1 class="page-header__title" data-en="Digital Marketing">التسويق الرقمي</h1>
+        <p class="page-header__desc" data-en="Marketing strategies and advertising content that help brands reach their audience.">استراتيجيات تسويقية ومحتوى إعلاني يساعد العلامات التجارية على الوصول إلى جمهورها.</p>
+      </div>
+    </section>
+
+    <!-- 2. Campaigns Gallery (Populated by JS) -->
+    <section class="portfolio-gallery section" id="gallery" aria-label="معرض الحملات">
+      <div class="container">
+        <div class="campaign-grid" id="mg">
+          
+          <!-- 
+            NOTE FOR JS DEVELOPER: 
+            This is the expected HTML structure for each marketing campaign card. 
+            The JS should generate these elements inside #mg.
+          -->
+          
+          <!-- Example Campaign Card (Static Placeholder for styling) -->
+          <article class="campaign-card">
+            <figure class="campaign-card__media">
+              <img src="assets/images/homewear.png" alt="اسم الحملة" loading="lazy" class="campaign-card__image">
+            </figure>
+            <div class="campaign-card__content">
+              <h2 class="campaign-card__title">اسم الحملة</h2>
+              <p class="campaign-card__desc">وصف قصير للحملة والنتائج التي حققتها.</p>
+              <a href="#" class="btn btn--secondary btn--sm" target="_blank" rel="noopener">مشاهدة الحملة</a>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Call to Action (UX Addition) -->
+    <section class="cta-banner section">
+      <div class="container cta-banner__container">
+        <div class="cta-banner__content">
+          <h2 class="cta-banner__title" data-en="Need a marketing strategy?">هل تحتاج إلى استراتيجية تسويقية؟</h2>
+          <p class="cta-banner__desc" data-en="Let's create campaigns that reach the right audience and drive results.">لنصنع معاً حملات تصل إلى الجمهور المناسب وتحقق النتائج المرجوة.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="index.html#contact" class="btn btn--primary" data-en="Contact Me Now">تواصل معي الآن</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (To be populated by JS) -->
+  <footer id="ft" class="footer"></footer>
+
+</body>
+</html>

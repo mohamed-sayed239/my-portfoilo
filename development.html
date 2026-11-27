@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-en="Software Development | Mohamed Sayed">تطوير البرمجيات | محمد سيد</title>
+  <meta name="description" content="مواقع وتطبيقات وحلول رقمية تجمع بين الأداء والتصميم وتجربة المستخدم.">
+  
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="main.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-p="dev" style="--c:var(--sw)">
+
+  <!-- Header -->
+  <header id="hd" class="header"></header>
+
+  <main class="page-content">
+    
+    <!-- 1. Page Header / Intro -->
+    <section class="page-header section">
+      <div class="container">
+        <a class="back-link" href="index.html" data-en="Back to home">
+          <span class="back-link__icon">&rarr;</span> 
+          <span data-en="Back to home">العودة للرئيسية</span>
+        </a>
+        <h1 class="page-header__title" data-en="Software Development">تطوير البرمجيات</h1>
+        <p class="page-header__desc" data-en="Websites, apps and digital solutions that combine performance, design and user experience.">مواقع وتطبيقات وحلول رقمية تجمع بين الأداء والتصميم وتجربة المستخدم.</p>
+      </div>
+    </section>
+
+    <!-- 2. Portfolio Gallery (Populated by JS) -->
+    <section class="portfolio-gallery section" id="gallery" aria-label="معرض المشاريع">
+      <div class="container">
+        <div class="project-grid" id="gal">
+          
+          <!-- 
+            NOTE FOR JS DEVELOPER: 
+            This is the expected HTML structure for each project card. 
+            The JS should generate these elements inside #gal.
+          -->
+          
+          <!-- Example Project Card (Static Placeholder for styling) -->
+          <article class="project-card">
+            <figure class="project-card__media">
+              <img src="assets/images/portfolio.png" alt="اسم المشروع" loading="lazy" class="project-card__image">
+            </figure>
+            <div class="project-card__content">
+              <h2 class="project-card__title">اسم المشروع</h2>
+              <p class="project-card__desc">وصف قصير للمشروع والتقنيات المستخدمة فيه.</p>
+              <a href="#" class="btn btn--secondary btn--sm" target="_blank" rel="noopener">مشاهدة المشروع</a>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Call to Action (New UX Addition) -->
+    <section class="cta-banner section">
+      <div class="container cta-banner__container">
+        <div class="cta-banner__content">
+          <h2 class="cta-banner__title" data-en="Do you have a similar project?">هل لديك مشروع مشابه؟</h2>
+          <p class="cta-banner__desc" data-en="Let's build a digital solution that serves your business and reaches your customers.">لنقم ببناء حل رقمي يخدم عملك ويصل إلى عملائك.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="index.html#contact" class="btn btn--primary" data-en="Contact Me Now">تواصل معي الآن</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="ft" class="footer"></footer>
+
+</body>
+</html>
