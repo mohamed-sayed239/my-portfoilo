@@ -28,7 +28,7 @@ It includes sections for **About Me, Projects, and Contact** with a clean respon
 ---
 
 ## ▶ How to Run
-1. Clone the repo:
+1. Clone the repo:(https://mohamed-sayed239.github.io/my-portfoilo/)
+
    ```bash
    
-(https://mohamed-sayed239.github.io/my-portfoilo/)
